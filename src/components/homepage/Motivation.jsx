@@ -2,10 +2,10 @@ import React from "react";
 
 const Motivation = () => {
   return (
-    <div className="w-11/12 mx-auto">
+    <div className="w-11/12 mx-auto pb-12">
       {/* Header Section */}
       <section className="w-full mt-5 pb-2">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto md:px-4">
           <div className="w-full">
             <div className="flex flex-col items-center">
               <div className="h-8"></div>
@@ -22,7 +22,7 @@ const Motivation = () => {
 
       {/* Video Grid Section */}
       <section className="w-full xl:px-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto md:px-4">
           {/* First Row of Videos */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             {/* Video 1 */}

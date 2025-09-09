@@ -2,10 +2,10 @@ import React from "react";
 
 const Certificate = () => {
   return (
-    <div className=" py-8">
+    <div className="py-4 md:py-8">
       {/* Certificates and Recognition Section */}
-      <section className="w-full mt-3">
-        <div className="container mx-auto px-4">
+      <section className="w-full md:mt-3">
+        <div className="container mx-auto md:px-4">
           <div className="w-full">
             <div className="flex flex-col items-center">
               <div className="h-8"></div>
@@ -14,14 +14,14 @@ const Certificate = () => {
                   CERTIFICATES AND RECOGNITION
                 </h3>
               </div>
-              <div className="w-48 h-[3px] bg-[#FB2056] mb-8"></div>
+              <div className="w-28 md:w-48 h-[3px] bg-[#FB2056] mb-8"></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Logos Grid */}
-      <section className="container mx-auto xl:px-40">
+      <section className="container mt-5 md:mt-0 mx-auto xl:px-40">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 items-center">
           {/* IMF Logo */}
           <div className="flex flex-col items-center text-center">

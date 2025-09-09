@@ -59,7 +59,7 @@ const Why = () => {
   return (
     <div className="w-11/12 mx-auto">
       {/* Header Section */}
-      <section className="w-full mt-5 pb-8">
+      <section className="w-full mt-5 pb-2 md:pb-8">
         <div className="container mx-auto px-4">
           <div className="w-full">
             <div className="flex flex-col items-center">

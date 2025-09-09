@@ -67,7 +67,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div className="relative w-full h-[50vh] md:h-screen overflow-hidden">
       {/* Slide Images Container */}
       <div className="relative w-full h-full">
         <div
@@ -91,14 +91,14 @@ const Hero = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 text-white rounded-full transition-all duration-300 backdrop-blur-sm cursor-pointer"
+        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 text-white rounded-full transition-all duration-300 backdrop-blur-sm cursor-pointer"
         disabled={isAnimating}
       >
         <ChevronLeft size={30} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 text-white transition-all duration-300 backdrop-blur-sm cursor-pointer"
+        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 text-white transition-all duration-300 backdrop-blur-sm cursor-pointer"
         disabled={isAnimating}
       >
         <ChevronRight size={30} />

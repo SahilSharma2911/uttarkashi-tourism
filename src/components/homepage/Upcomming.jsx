@@ -16,6 +16,7 @@ const Upcoming = () => {
     slider4: false,
   });
 
+  const [carouselEffect, setCarouselEffect] = useState('slide'); // slide, fade, zoom
   const [searchQuery, setSearchQuery] = useState("");
 
   // Trek data with images
@@ -136,79 +137,175 @@ const Upcoming = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    // Handle search functionality here
     console.log("Searching for:", searchQuery);
+  };
+
+  const getCarouselClasses = () => {
+    const baseClasses = "flex w-full h-full";
+    
+    switch (carouselEffect) {
+      case 'fade':
+        return `${baseClasses} transition-opacity duration-800 ease-in-out`;
+      case 'zoom':
+        return `${baseClasses} transition-all duration-800 ease-in-out transform`;
+      default:
+        return `${baseClasses} transition-transform duration-800 ease-in-out`;
+    }
+  };
+
+  const getSlideTransform = (sliderId) => {
+    const currentIndex = currentSlides[sliderId];
+    
+    switch (carouselEffect) {
+      case 'fade':
+        return { opacity: 1 };
+      case 'zoom':
+        return { 
+          transform: `translateX(-${currentIndex * 100}%) scale(1.02)`,
+        };
+      default:
+        return { transform: `translateX(-${currentIndex * 100}%)` };
+    }
+  };
+
+  const getImageClasses = (index, sliderId) => {
+    const currentIndex = currentSlides[sliderId];
+    const baseClasses = "w-full h-full object-cover transition-all duration-800";
+    
+    if (carouselEffect === 'zoom') {
+      return `${baseClasses} ${index === currentIndex ? 'scale-110' : 'scale-100'}`;
+    }
+    
+    return baseClasses;
   };
 
   const SliderComponent = ({ sliderId, data }) => (
     <div className="relative w-full h-96 overflow-hidden shadow-lg group">
       {/* Slide Images Container */}
       <div className="relative w-full h-full">
-        <div
-          className="flex w-full h-full transition-transform duration-800 ease-in-out"
-          style={{ transform: `translateX(-${currentSlides[sliderId] * 100}%)` }}
-        >
-          {data.map((trek, index) => (
-            <div key={index} className="min-w-full h-full relative">
-              <img
-                src={trek.image}
-                alt={trek.title}
-                className="w-full h-full object-cover"
-              />
-              {/* Dark overlay for better text readability */}
-              <div className="absolute inset-0 bg-black/40"></div>
-            </div>
-          ))}
-        </div>
+        {carouselEffect === 'fade' ? (
+          // Fade effect - stack images
+          <div className="relative w-full h-full">
+            {data.map((trek, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 transition-opacity duration-800 ease-in-out ${
+                  index === currentSlides[sliderId] ? 'opacity-100' : 'opacity-0'
+                }`}
+              >
+                <img
+                  src={trek.image}
+                  alt={trek.title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          // Other effects - sliding container
+          <div
+            className={getCarouselClasses()}
+            style={getSlideTransform(sliderId)}
+          >
+            {data.map((trek, index) => (
+              <div key={index} className="min-w-full h-full relative overflow-hidden">
+                <img
+                  src={trek.image}
+                  alt={trek.title}
+                  className={getImageClasses(index, sliderId)}
+                />
+                {/* Enhanced gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent"></div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
-      {/* Content Overlay */}
+      {/* Content Overlay with Enhanced Animations */}
       <div className="absolute inset-0 z-10">
-        <div
-          className="flex w-full h-full transition-transform duration-800 ease-in-out"
-          style={{ transform: `translateX(-${currentSlides[sliderId] * 100}%)` }}
-        >
-          {data.map((trek, index) => (
-            <div
-              key={index}
-              className="min-w-full h-full flex items-center justify-center"
-            >
-              <div className="text-center text-white px-6 max-w-2xl mx-auto">
-                <div className="flex flex-col items-center justify-center">
-                  <h3 className="text-xl md:text-2xl font-bold mb-4">{trek.title}</h3>
-                  <p className="text-base md:text-lg leading-relaxed mb-6 font-medium">
-                    {trek.description}
-                  </p>
-                  <a
-                    href={trek.link}
-                    className="inline-block bg-[#FB2056] hover:bg-white hover:text-black border-white border text-white px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300"
-                  >
-                    Click Here
-                  </a>
+        {carouselEffect === 'fade' ? (
+          // Fade content overlay
+          <div className="relative w-full h-full">
+            {data.map((trek, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 flex items-center justify-center transition-all duration-800 ease-in-out ${
+                  index === currentSlides[sliderId] 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-4'
+                }`}
+              >
+                <div className="text-center text-white px-6 max-w-2xl mx-auto">
+                  <div className="flex flex-col items-center justify-center">
+                    <h3 className="text-xl md:text-2xl font-bold mb-4">{trek.title}</h3>
+                    <p className="text-base md:text-lg leading-relaxed mb-6 font-medium">
+                      {trek.description}
+                    </p>
+                    <a
+                      href={trek.link}
+                      className="inline-block bg-[#FB2056] hover:bg-white hover:text-black border-white border text-white px-6 py-2 rounded-sm font-semibold transition-all duration-300 transform"
+                    >
+                      Click Here
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        ) : (
+          // Sliding content overlay
+          <div
+            className="flex w-full h-full transition-transform duration-800 ease-in-out"
+            style={{ transform: `translateX(-${currentSlides[sliderId] * 100}%)` }}
+          >
+            {data.map((trek, index) => (
+              <div
+                key={index}
+                className="min-w-full h-full flex items-center justify-center"
+              >
+                <div className="text-center text-white px-6 max-w-2xl mx-auto">
+                  <div className={`flex flex-col items-center justify-center transition-all duration-1000 delay-300 ${
+                    index === currentSlides[sliderId] 
+                      ? 'opacity-100 translate-y-0' 
+                      : 'opacity-0 translate-y-8'
+                  }`}>
+                    <h3 className="text-xl md:text-2xl font-bold mb-4">{trek.title}</h3>
+                    <p className="text-base md:text-lg leading-relaxed mb-6 font-medium">
+                      {trek.description}
+                    </p>
+                    <a
+                      href={trek.link}
+                      className="inline-block bg-[#FB2056] hover:bg-white hover:text-black border-white border text-white px-6 py-2 rounded-sm font-semibold transition-all duration-300 transform hover:scale-105"
+                    >
+                      Click Here
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
 
-      {/* Navigation Arrows */}
+      {/* Enhanced Navigation Arrows */}
       <button
         onClick={() => prevSlide(sliderId)}
-        className="absolute left-2 top-1/2 -translate-y-1/2 z-20 text-white rounded-full transition-all duration-300 backdrop-blur-sm cursor-pointer"
+        className="absolute left-2 top-1/2 -translate-y-1/2 z-20 bg-black/20 hover:bg-black/40 text-white rounded-full p-2 transition-all duration-300 cursor-pointer transform hover:scale-110 "
         disabled={isAnimating[sliderId]}
       >
         <ChevronLeft size={24} />
       </button>
       <button
         onClick={() => nextSlide(sliderId)}
-        className="absolute right-2 top-1/2 -translate-y-1/2 z-20 text-white transition-all duration-300 backdrop-blur-sm cursor-pointer"
+        className="absolute right-2 top-1/2 -translate-y-1/2 z-20 bg-black/20 hover:bg-black/40 text-white rounded-full p-2 transition-all duration-300 cursor-pointer transform hover:scale-110"
         disabled={isAnimating[sliderId]}
       >
         <ChevronRight size={24} />
       </button>
 
-      {/* Pagination Dots */}
+      {/* Original Pagination Dots - Kept Exactly the Same */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex space-x-2">
         {data.map((_, index) => (
           <button
@@ -230,34 +327,35 @@ const Upcoming = () => {
     <div className="w-11/12 mx-auto bg-white">
       {/* Search Section */}
       <section className="mt-5">
-        <div className="container mx-auto px-4">
-            <div className="flex justify-center">
-              <form
-                onSubmit={handleSearch}
-                className="relative w-full max-w-2xl"
+        <div className="container mx-auto">
+          <div className="flex justify-center">
+            <form
+              onSubmit={handleSearch}
+              className="relative w-full max-w-2xl"
+            >
+              <input
+                type="search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search your trek"
+                className="w-full px-4 py-2 pr-12 border border-[#ccc] outline-none text-black"
+              />
+              <button
+                type="submit"
+                className="absolute right-0 top-1/2 -translate-y-1/2 py-2.5 px-2 bg-black"
               >
-                <input
-                  type="search"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search your trek"
-                  className="w-full px-4 py-2 pr-12 border border-[#ccc] outline-none text-black"
-                />
-                <button
-                  type="submit"
-                  className="absolute right-0 top-1/2 -translate-y-1/2 py-2.5 px-2 bg-black"
-                >
-                  <Search className="w-5 h-5" />
-                </button>
-              </form>
-            </div>
-            <div></div>
+                <Search className="w-5 h-5" />
+              </button>
+            </form>
           </div>
+          <div></div>
+        </div>
       </section>
 
+
       {/* Header Section */}
-      <section className="w-full mt-3 pb-8">
-        <div className="container mx-auto px-4">
+      <section className="w-full mt-3 pb-5 md:pb-8">
+        <div className="container mx-auto md:px-4">
           <div className="w-full">
             <div className="flex flex-col items-center">
               <div className="h-8"></div>
@@ -273,8 +371,8 @@ const Upcoming = () => {
       </section>
 
       {/* Trek Sliders Section */}
-      <section className="w-full bg-white px-4 md:px-28">
-        <div className="container mx-auto px-4">
+      <section className="w-full bg-white  md:px-28">
+        <div className="container mx-auto md:px-4">
           {/* First Row */}
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <SliderComponent sliderId="slider1" data={trekData.slider1} />
