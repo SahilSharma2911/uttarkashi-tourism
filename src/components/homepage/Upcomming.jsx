@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Search } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Upcoming = () => {
   const [currentSlides, setCurrentSlides] = useState({
@@ -16,8 +17,10 @@ const Upcoming = () => {
     slider4: false,
   });
 
-  const [carouselEffect, setCarouselEffect] = useState('slide'); // slide, fade, zoom
+  const [carouselEffect, setCarouselEffect] = useState("slide"); // slide, fade, zoom
   const [searchQuery, setSearchQuery] = useState("");
+
+  const navigate = useNavigate();
 
   // Trek data with images
   const trekData = {
@@ -27,14 +30,16 @@ const Upcoming = () => {
         description:
           "The Pin Bhaba pass trek is a high altitude pass situated at an elevation of 4908 m above sea level. It connects the lush green Bhaba Valley to the stark and arid pin Valley in Spiti.",
         link: "/pin-bhabha-pass-trek/",
-        image: "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/website-banner-scaled.webp",
+        image:
+          "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/website-banner-scaled.webp",
       },
       {
         title: "PIN BHABA PASS",
         description:
           "It is a dramatic cross over trek and is one of the challenging options available for people who want to hit higher altitude.",
         link: "/pin-bhabha-pass-trek/",
-        image: "https://www.thesearchingsouls.com/wp-content/uploads/2023/06/Jumbo-Bag-2.webp",
+        image:
+          "https://www.thesearchingsouls.com/wp-content/uploads/2023/06/Jumbo-Bag-2.webp",
       },
     ],
     slider2: [
@@ -43,14 +48,16 @@ const Upcoming = () => {
         description:
           "The Valley of Flowers is a breathtaking national park at 3,658 m, located in Bhyundar Valley, Chamoli district, Uttarakhand.",
         link: "/valley-of-flowers-and-hemkund-sahib/",
-        image: "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-22-at-15.55.55_c78e9393-scaled.webp",
+        image:
+          "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-22-at-15.55.55_c78e9393-scaled.webp",
       },
       {
         title: "VALLEY OF FLOWER",
         description:
           "It's a UNESCO World Heritage Site with lush forests, rivers, and waterfalls.",
         link: "/valley-of-flowers-and-hemkund-sahib/",
-        image: "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/website-banner-scaled.webp",
+        image:
+          "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/website-banner-scaled.webp",
       },
     ],
     slider3: [
@@ -59,14 +66,16 @@ const Upcoming = () => {
         description:
           "Hampta Pass, one of the best treks in Kullu, Himachal Pradesh, lies at approx. 4,200 m in the Pir Panjal range, offering scenic views of both sides of the Himalayas.",
         link: "/hampta-pass-trek/",
-        image: "https://www.thesearchingsouls.com/wp-content/uploads/2023/06/Jumbo-Bag-2.webp",
+        image:
+          "https://www.thesearchingsouls.com/wp-content/uploads/2023/06/Jumbo-Bag-2.webp",
       },
       {
         title: "HAMPTA PASS TREK",
         description:
           "The trail is easy to moderate, suitable for all trekkers, offering a complete shift in landscape from Manali's green valleys to Spiti's rocky terrain, with views of snow-clad peaks and glaciers.",
         link: "/hampta-pass-trek/",
-        image: "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-22-at-15.55.55_c78e9393-scaled.webp",
+        image:
+          "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-22-at-15.55.55_c78e9393-scaled.webp",
       },
     ],
     slider4: [
@@ -75,32 +84,37 @@ const Upcoming = () => {
         description:
           "Bhrigu Lake trek is a high altitude trek in Kullu district of Himanchal Pradesh. It is situated at an altitude of 4300 metres.",
         link: "/bhrigu-lake-trek/",
-        image: "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/website-banner-scaled.webp",
+        image:
+          "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/website-banner-scaled.webp",
       },
       {
         title: "BHRIGU LAKE TREK",
         description:
           "The view of stars is so clear that you will feel like you are watching a HD TV full of stars; If you are a photographer you can capture the beauty.",
         link: "/bhrigu-lake-trek/",
-        image: "https://www.thesearchingsouls.com/wp-content/uploads/2023/06/Jumbo-Bag-2.webp",
+        image:
+          "https://www.thesearchingsouls.com/wp-content/uploads/2023/06/Jumbo-Bag-2.webp",
       },
     ],
   };
 
   const nextSlide = (sliderId) => {
     if (!isAnimating[sliderId]) {
-      setIsAnimating(prev => ({ ...prev, [sliderId]: true }));
+      setIsAnimating((prev) => ({ ...prev, [sliderId]: true }));
       setCurrentSlides((prev) => ({
         ...prev,
         [sliderId]: (prev[sliderId] + 1) % trekData[sliderId].length,
       }));
-      setTimeout(() => setIsAnimating(prev => ({ ...prev, [sliderId]: false })), 800);
+      setTimeout(
+        () => setIsAnimating((prev) => ({ ...prev, [sliderId]: false })),
+        800
+      );
     }
   };
 
   const prevSlide = (sliderId) => {
     if (!isAnimating[sliderId]) {
-      setIsAnimating(prev => ({ ...prev, [sliderId]: true }));
+      setIsAnimating((prev) => ({ ...prev, [sliderId]: true }));
       setCurrentSlides((prev) => ({
         ...prev,
         [sliderId]:
@@ -108,15 +122,21 @@ const Upcoming = () => {
             ? trekData[sliderId].length - 1
             : prev[sliderId] - 1,
       }));
-      setTimeout(() => setIsAnimating(prev => ({ ...prev, [sliderId]: false })), 800);
+      setTimeout(
+        () => setIsAnimating((prev) => ({ ...prev, [sliderId]: false })),
+        800
+      );
     }
   };
 
   const goToSlide = (sliderId, index) => {
     if (!isAnimating[sliderId] && index !== currentSlides[sliderId]) {
-      setIsAnimating(prev => ({ ...prev, [sliderId]: true }));
+      setIsAnimating((prev) => ({ ...prev, [sliderId]: true }));
       setCurrentSlides((prev) => ({ ...prev, [sliderId]: index }));
-      setTimeout(() => setIsAnimating(prev => ({ ...prev, [sliderId]: false })), 800);
+      setTimeout(
+        () => setIsAnimating((prev) => ({ ...prev, [sliderId]: false })),
+        800
+      );
     }
   };
 
@@ -142,11 +162,11 @@ const Upcoming = () => {
 
   const getCarouselClasses = () => {
     const baseClasses = "flex w-full h-full";
-    
+
     switch (carouselEffect) {
-      case 'fade':
+      case "fade":
         return `${baseClasses} transition-opacity duration-800 ease-in-out`;
-      case 'zoom':
+      case "zoom":
         return `${baseClasses} transition-all duration-800 ease-in-out transform`;
       default:
         return `${baseClasses} transition-transform duration-800 ease-in-out`;
@@ -155,12 +175,12 @@ const Upcoming = () => {
 
   const getSlideTransform = (sliderId) => {
     const currentIndex = currentSlides[sliderId];
-    
+
     switch (carouselEffect) {
-      case 'fade':
+      case "fade":
         return { opacity: 1 };
-      case 'zoom':
-        return { 
+      case "zoom":
+        return {
           transform: `translateX(-${currentIndex * 100}%) scale(1.02)`,
         };
       default:
@@ -170,12 +190,15 @@ const Upcoming = () => {
 
   const getImageClasses = (index, sliderId) => {
     const currentIndex = currentSlides[sliderId];
-    const baseClasses = "w-full h-full object-cover transition-all duration-800";
-    
-    if (carouselEffect === 'zoom') {
-      return `${baseClasses} ${index === currentIndex ? 'scale-110' : 'scale-100'}`;
+    const baseClasses =
+      "w-full h-full object-cover transition-all duration-800";
+
+    if (carouselEffect === "zoom") {
+      return `${baseClasses} ${
+        index === currentIndex ? "scale-110" : "scale-100"
+      }`;
     }
-    
+
     return baseClasses;
   };
 
@@ -183,14 +206,16 @@ const Upcoming = () => {
     <div className="relative w-full h-96 overflow-hidden shadow-lg group">
       {/* Slide Images Container */}
       <div className="relative w-full h-full">
-        {carouselEffect === 'fade' ? (
+        {carouselEffect === "fade" ? (
           // Fade effect - stack images
           <div className="relative w-full h-full">
             {data.map((trek, index) => (
               <div
                 key={index}
                 className={`absolute inset-0 transition-opacity duration-800 ease-in-out ${
-                  index === currentSlides[sliderId] ? 'opacity-100' : 'opacity-0'
+                  index === currentSlides[sliderId]
+                    ? "opacity-100"
+                    : "opacity-0"
                 }`}
               >
                 <img
@@ -209,7 +234,10 @@ const Upcoming = () => {
             style={getSlideTransform(sliderId)}
           >
             {data.map((trek, index) => (
-              <div key={index} className="min-w-full h-full relative overflow-hidden">
+              <div
+                key={index}
+                className="min-w-full h-full relative overflow-hidden"
+              >
                 <img
                   src={trek.image}
                   alt={trek.title}
@@ -225,21 +253,23 @@ const Upcoming = () => {
 
       {/* Content Overlay with Enhanced Animations */}
       <div className="absolute inset-0 z-10">
-        {carouselEffect === 'fade' ? (
+        {carouselEffect === "fade" ? (
           // Fade content overlay
           <div className="relative w-full h-full">
             {data.map((trek, index) => (
               <div
                 key={index}
                 className={`absolute inset-0 flex items-center justify-center transition-all duration-800 ease-in-out ${
-                  index === currentSlides[sliderId] 
-                    ? 'opacity-100 translate-y-0' 
-                    : 'opacity-0 translate-y-4'
+                  index === currentSlides[sliderId]
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-4"
                 }`}
               >
                 <div className="text-center text-white px-6 max-w-2xl mx-auto">
                   <div className="flex flex-col items-center justify-center">
-                    <h3 className="text-xl md:text-2xl font-bold mb-4">{trek.title}</h3>
+                    <h3 className="text-xl md:text-2xl font-bold mb-4">
+                      {trek.title}
+                    </h3>
                     <p className="text-base md:text-lg leading-relaxed mb-6 font-medium">
                       {trek.description}
                     </p>
@@ -258,32 +288,40 @@ const Upcoming = () => {
           // Sliding content overlay
           <div
             className="flex w-full h-full transition-transform duration-800 ease-in-out"
-            style={{ transform: `translateX(-${currentSlides[sliderId] * 100}%)` }}
+            style={{
+              transform: `translateX(-${currentSlides[sliderId] * 100}%)`,
+            }}
           >
             {data.map((trek, index) => (
-              <div
-                key={index}
-                className="min-w-full h-full flex items-center justify-center"
-              >
-                <div className="text-center text-white px-6 max-w-2xl mx-auto">
-                  <div className={`flex flex-col items-center justify-center transition-all duration-1000 delay-300 ${
-                    index === currentSlides[sliderId] 
-                      ? 'opacity-100 translate-y-0' 
-                      : 'opacity-0 translate-y-8'
-                  }`}>
-                    <h3 className="text-xl md:text-2xl font-bold mb-4">{trek.title}</h3>
-                    <p className="text-base md:text-lg leading-relaxed mb-6 font-medium">
-                      {trek.description}
-                    </p>
-                    <a
-                      href={trek.link}
-                      className="inline-block bg-[#FB2056] hover:bg-white hover:text-black border-white border text-white px-6 py-2 rounded-sm font-semibold transition-all duration-300 transform hover:scale-105"
+              <a href={trek.link} className="min-w-full h-full flex items-center justify-center">
+                <div
+                  key={index}
+                  className="min-w-full h-full flex items-center justify-center"
+                >
+                  <div className="text-center text-white px-6 max-w-2xl mx-auto">
+                    <div
+                      className={`flex flex-col items-center justify-center transition-all duration-1000 delay-300 ${
+                        index === currentSlides[sliderId]
+                          ? "opacity-100 translate-y-0"
+                          : "opacity-0 translate-y-8"
+                      }`}
                     >
-                      Click Here
-                    </a>
+                      <h3 className="text-xl md:text-2xl font-bold mb-4">
+                        {trek.title}
+                      </h3>
+                      <p className="text-base md:text-lg leading-relaxed mb-6 font-medium">
+                        {trek.description}
+                      </p>
+                      <a
+                        href={trek.link}
+                        className="inline-block bg-[#FB2056] hover:bg-white hover:text-black border-white border text-white px-6 py-2 rounded-sm font-semibold transition-all duration-300 transform hover:scale-105"
+                      >
+                        Click Here
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         )}
@@ -329,10 +367,7 @@ const Upcoming = () => {
       <section className="mt-5">
         <div className="container mx-auto">
           <div className="flex justify-center">
-            <form
-              onSubmit={handleSearch}
-              className="relative w-full max-w-2xl"
-            >
+            <form onSubmit={handleSearch} className="relative w-full max-w-2xl">
               <input
                 type="search"
                 value={searchQuery}
@@ -351,7 +386,6 @@ const Upcoming = () => {
           <div></div>
         </div>
       </section>
-
 
       {/* Header Section */}
       <section className="w-full mt-3 pb-5 md:pb-8">
