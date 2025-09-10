@@ -14,8 +14,8 @@ import WhyTSS from "./WhyTSS";
 const TrekPage = () => {
   return (
     <div>
-      {/* <Hero /> */}
-      {/* <EnquirySection />
+      <Hero />
+      <EnquirySection />
       <NavigationButtons />
       <TrekDetails />
       <GearAndInclusions />
@@ -25,8 +25,7 @@ const TrekPage = () => {
       <WhyTSS />
       <PackingEssentials />
       <CallToAction />
-      <RelatedTreks /> */}
-      sfsdfsdf
+      <RelatedTreks />
     </div>
   );
 };
