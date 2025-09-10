@@ -1,16 +1,35 @@
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import Layout from "./Layout/Layout";
 import HomePage from "./components/homepage/HomePage";
-import Footer from "./components/layout/Footer";
-import Navbar from "./components/layout/Navbar";
+import TrekPage from "./components/trek/TrekPage";
 
 function App() {
   return (
-    <>
-      <div className="bg-white">
-        <Navbar />
-        <HomePage />
-        <Footer />
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout>
+              <HomePage />
+            </Layout>
+          }
+        />
+        <Route
+          path="/:slug"
+          element={
+            <Layout>
+              <TrekPage />
+            </Layout>
+          }
+        />
+      </Routes>
+    </Router>
   );
 }
 
