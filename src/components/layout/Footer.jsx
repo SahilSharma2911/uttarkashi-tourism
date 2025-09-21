@@ -145,18 +145,19 @@ const Footer = () => {
       {/* Copyright and Links Section */}
       <footer className="bg-white py-6 w-11/12 mx-auto lg:px-24">
         <div className="container mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-center items-center">
             {/* Copyright */}
             <div className="mb-4 md:mb-0 text-center md:text-left">
               <p className="text-black">
-                The Searching Souls © 2019 All Rights Reserved
+                The Searching Souls © {new Date().getFullYear()} All Rights
+                Reserved
               </p>
             </div>
 
             {/* Links */}
-            <div className="flex flex-wrap justify-center">
+            {/* <div className="flex flex-wrap justify-center">
               <ul className="flex flex-wrap justify-center gap-4 md:gap-6">
-                <li>
+                 <li>
                   <a
                     href="https://www.thesearchingsouls.com/faq/"
                     className="text-black  transition-colors flex items-center"
@@ -170,7 +171,7 @@ const Footer = () => {
                     </svg>
                     FAQ
                   </a>
-                </li>
+                </li> 
                 <li>
                   <a
                     href="https://www.thesearchingsouls.com/terms-condition/"
@@ -185,8 +186,8 @@ const Footer = () => {
                     </svg>
                     Terms & Condition
                   </a>
-                </li>
-                <li>
+                </li> 
+                 <li>
                   <a
                     href="https://www.thesearchingsouls.com/cancellation-policy/"
                     className="text-black  transition-colors flex items-center"
@@ -200,8 +201,8 @@ const Footer = () => {
                     </svg>
                     Cancellation Policy
                   </a>
-                </li>
-                <li>
+                </li> 
+                 <li>
                   <a
                     href="https://www.thesearchingsouls.com/privacy-policy/"
                     className="text-black  transition-colors flex items-center"
@@ -215,7 +216,7 @@ const Footer = () => {
                     </svg>
                     Privacy Policy
                   </a>
-                </li>
+                </li> 
                 <li>
                   <a
                     href="https://www.thesearchingsouls.com/disclaimer/"
@@ -247,7 +248,7 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>

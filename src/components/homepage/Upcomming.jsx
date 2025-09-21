@@ -22,81 +22,81 @@ const Upcoming = () => {
 
   const navigate = useNavigate();
 
-  // Trek data with images
   const trekData = {
-    slider1: [
-      {
-        title: "PIN BHABA PASS",
-        description:
-          "The Pin Bhaba pass trek is a high altitude pass situated at an elevation of 4908 m above sea level. It connects the lush green Bhaba Valley to the stark and arid pin Valley in Spiti.",
-        link: "/pin-bhabha-pass-trek/",
-        image:
-          "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/website-banner-scaled.webp",
-      },
-      {
-        title: "PIN BHABA PASS",
-        description:
-          "It is a dramatic cross over trek and is one of the challenging options available for people who want to hit higher altitude.",
-        link: "/pin-bhabha-pass-trek/",
-        image:
-          "https://www.thesearchingsouls.com/wp-content/uploads/2023/06/Jumbo-Bag-2.webp",
-      },
-    ],
-    slider2: [
-      {
-        title: "VALLEY OF FLOWER",
-        description:
-          "The Valley of Flowers is a breathtaking national park at 3,658 m, located in Bhyundar Valley, Chamoli district, Uttarakhand.",
-        link: "/valley-of-flowers-and-hemkund-sahib/",
-        image:
-          "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-22-at-15.55.55_c78e9393-scaled.webp",
-      },
-      {
-        title: "VALLEY OF FLOWER",
-        description:
-          "It's a UNESCO World Heritage Site with lush forests, rivers, and waterfalls.",
-        link: "/valley-of-flowers-and-hemkund-sahib/",
-        image:
-          "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/website-banner-scaled.webp",
-      },
-    ],
-    slider3: [
-      {
-        title: "HAMPTA PASS TREK",
-        description:
-          "Hampta Pass, one of the best treks in Kullu, Himachal Pradesh, lies at approx. 4,200 m in the Pir Panjal range, offering scenic views of both sides of the Himalayas.",
-        link: "/hampta-pass-trek/",
-        image:
-          "https://www.thesearchingsouls.com/wp-content/uploads/2023/06/Jumbo-Bag-2.webp",
-      },
-      {
-        title: "HAMPTA PASS TREK",
-        description:
-          "The trail is easy to moderate, suitable for all trekkers, offering a complete shift in landscape from Manali's green valleys to Spiti's rocky terrain, with views of snow-clad peaks and glaciers.",
-        link: "/hampta-pass-trek/",
-        image:
-          "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-22-at-15.55.55_c78e9393-scaled.webp",
-      },
-    ],
-    slider4: [
-      {
-        title: "BHRIGU LAKE TREK",
-        description:
-          "Bhrigu Lake trek is a high altitude trek in Kullu district of Himanchal Pradesh. It is situated at an altitude of 4300 metres.",
-        link: "/bhrigu-lake-trek/",
-        image:
-          "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/website-banner-scaled.webp",
-      },
-      {
-        title: "BHRIGU LAKE TREK",
-        description:
-          "The view of stars is so clear that you will feel like you are watching a HD TV full of stars; If you are a photographer you can capture the beauty.",
-        link: "/bhrigu-lake-trek/",
-        image:
-          "https://www.thesearchingsouls.com/wp-content/uploads/2023/06/Jumbo-Bag-2.webp",
-      },
-    ],
-  };
+  slider1: [
+    {
+      title: "PIN BHABA PASS",
+      subtitle: "Starting from ₹499, 5D/4N",
+      description:
+        "The Pin Bhaba pass trek is a high altitude pass situated at an elevation of 4908 m above sea level. It connects the lush green Bhaba Valley to the stark and arid pin Valley in Spiti.",
+      link: "/pin-bhabha-pass-trek/",
+      image: "/chardham-yatra.webp",
+    },
+    {
+      title: "PIN BHABA PASS",
+      subtitle: "Starting from ₹499, 5D/4N",
+      description:
+        "It is a dramatic cross over trek and is one of the challenging options available for people who want to hit higher altitude.",
+      link: "/pin-bhabha-pass-trek/",
+      image: "/jumbo-bag.webp",
+    },
+  ],
+  slider2: [
+    {
+      title: "VALLEY OF FLOWER",
+      subtitle: "Starting from ₹499, 5D/4N",
+      description:
+        "The Valley of Flowers is a breathtaking national park at 3,658 m, located in Bhyundar Valley, Chamoli district, Uttarakhand.",
+      link: "/valley-of-flowers-and-hemkund-sahib/",
+      image: "/tss-banner.webp",
+    },
+    {
+      title: "VALLEY OF FLOWER",
+      subtitle: "Starting from ₹499, 5D/4N",
+      description:
+        "It's a UNESCO World Heritage Site with lush forests, rivers, and waterfalls.",
+      link: "/valley-of-flowers-and-hemkund-sahib/",
+      image: "/chardham-yatra.webp",
+    },
+  ],
+  slider3: [
+    {
+      title: "HAMPTA PASS TREK",
+      subtitle: "Starting from ₹499, 5D/4N",
+      description:
+        "Hampta Pass, one of the best treks in Kullu, Himachal Pradesh, lies at approx. 4,200 m in the Pir Panjal range, offering scenic views of both sides of the Himalayas.",
+      link: "/hampta-pass-trek/",
+      image: "/jumbo-bag.webp",
+    },
+    {
+      title: "HAMPTA PASS TREK",
+      subtitle: "Starting from ₹499, 5D/4N",
+      description:
+        "The trail is easy to moderate, suitable for all trekkers, offering a complete shift in landscape from Manali's green valleys to Spiti's rocky terrain, with views of snow-clad peaks and glaciers.",
+      link: "/hampta-pass-trek/",
+      image: "/tss-banner.webp",
+    },
+  ],
+  slider4: [
+    {
+      title: "BHRIGU LAKE TREK",
+      subtitle: "Starting from ₹499, 5D/4N",
+      description:
+        "Bhrigu Lake trek is a high altitude trek in Kullu district of Himanchal Pradesh. It is situated at an altitude of 4300 metres.",
+      link: "/bhrigu-lake-trek/",
+      image: "/chardham-yatra.webp",
+    },
+    {
+      title: "BHRIGU LAKE TREK",
+      subtitle: "Starting from ₹499, 5D/4N",
+      description:
+        "The view of stars is so clear that you will feel like you are watching a HD TV full of stars; If you are a photographer you can capture the beauty.",
+      link: "/bhrigu-lake-trek/",
+      image: "/jumbo-bag.webp",
+    },
+  ],
+};
+
 
   const nextSlide = (sliderId) => {
     if (!isAnimating[sliderId]) {
@@ -270,6 +270,9 @@ const Upcoming = () => {
                     <h3 className="text-xl md:text-2xl font-bold mb-4">
                       {trek.title}
                     </h3>
+                    <h3 className=" font-medium mb-4">
+                      {trek.subtitle}
+                    </h3>
                     <p className="text-base md:text-lg leading-relaxed mb-6 font-medium">
                       {trek.description}
                     </p>
@@ -293,7 +296,10 @@ const Upcoming = () => {
             }}
           >
             {data.map((trek, index) => (
-              <a href={trek.link} className="min-w-full h-full flex items-center justify-center">
+              <a
+                href={trek.link}
+                className="min-w-full h-full flex items-center justify-center"
+              >
                 <div
                   key={index}
                   className="min-w-full h-full flex items-center justify-center"
@@ -309,6 +315,7 @@ const Upcoming = () => {
                       <h3 className="text-xl md:text-2xl font-bold mb-4">
                         {trek.title}
                       </h3>
+                      <h3 className="  font-semibold mb-4">{trek.subtitle}</h3>
                       <p className="text-base md:text-lg leading-relaxed mb-6 font-medium">
                         {trek.description}
                       </p>
@@ -364,7 +371,7 @@ const Upcoming = () => {
   return (
     <div className="w-11/12 mx-auto bg-white">
       {/* Search Section */}
-      <section className="mt-5">
+      {/* <section className="mt-5">
         <div className="container mx-auto">
           <div className="flex justify-center">
             <form onSubmit={handleSearch} className="relative w-full max-w-2xl">
@@ -385,7 +392,7 @@ const Upcoming = () => {
           </div>
           <div></div>
         </div>
-      </section>
+      </section> */}
 
       {/* Header Section */}
       <section className="w-full mt-3 pb-5 md:pb-8">
@@ -395,7 +402,7 @@ const Upcoming = () => {
               <div className="h-8"></div>
               <div className="mb-3">
                 <h3 className="text-2xl md:text-3xl font-bold text-center text-[#3a3a3a] tracking-wide">
-                  UPCOMING SUMMER TREKS
+                  UPCOMING WINTER TREKS
                 </h3>
               </div>
               <div className="w-36 h-[3px] bg-[#FB2056] mb-8"></div>

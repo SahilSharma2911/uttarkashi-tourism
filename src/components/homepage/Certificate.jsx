@@ -81,7 +81,7 @@ const Certificate = () => {
       </section>
 
       {/* In The Media Section */}
-      <section className="w-full">
+      {/* <section className="w-full">
         <div className="container mx-auto px-4">
           <div className="w-full">
             <div className="flex flex-col items-center">
@@ -95,10 +95,10 @@ const Certificate = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Recognition Section */}
-      <section className=" mx-4 -mt-5">
+      {/* <section className=" mx-4 -mt-5">
         <div className="flex flex-col items-center justify-center">
           <div className="flex-shrink-0">
             <figure className="text-center">
@@ -122,7 +122,7 @@ const Certificate = () => {
             </h3>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

@@ -8,7 +8,7 @@ const Hero = () => {
   const slides = [
     {
       image:
-        "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/website-banner-scaled.webp",
+        "/chardham-yatra.webp",
       title: "EXPLORE THE HIMALAYAS",
       subtitle: "MOST RELIABLE TREKKING COMMUNITY IN INDIA",
       description:
@@ -17,7 +17,7 @@ const Hero = () => {
     },
     {
       image:
-        "https://www.thesearchingsouls.com/wp-content/uploads/2023/06/Jumbo-Bag-2.webp",
+        "/jumbo-bag.webp",
       title: "TSS Jumbo BAG",
       subtitle: "Complete Rental Solution for Trekkers",
       description: "Get all your trekking gear in one comprehensive package",
@@ -25,8 +25,7 @@ const Hero = () => {
     },
     {
       image:
-        "https://www.thesearchingsouls.com/wp-content/uploads/2024/11/WhatsApp-Image-2024-11-22-at-15.55.55_c78e9393-scaled.webp",
-
+        "/tss-banner.webp",
       title: "Spiritual Tours",
       subtitle: "Uttarakhand Char Dham Yatra",
       description: "Experience the divine journey through sacred destinations",

@@ -170,7 +170,7 @@ const Why = () => {
       </section>
 
       {/* Counter Section */}
-      <section className="container mx-auto xl:px-28 mt-10">
+      {/* <section className="container mx-auto xl:px-28 mt-10">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <CounterItem end={5000} suffix="+" title="Treks and Tours" />
@@ -179,7 +179,7 @@ const Why = () => {
             <CounterItem end={25000} suffix="+" title="Happy Souls" />
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
