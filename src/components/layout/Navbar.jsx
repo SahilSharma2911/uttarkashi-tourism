@@ -28,7 +28,7 @@ const Navbar = () => {
 
   const navItems = [
     { name: "Home", href: "#" },
-    { name: "Reviews", href: "#" },
+    // { name: "Reviews", href: "#" },
     {
       name: "Treks",
       href: "#",
@@ -57,8 +57,8 @@ const Navbar = () => {
         { name: "Monsoon Treks", hasSubDropdown: false },
       ],
     },
-    { name: "Shop", href: "#" },
-    { name: "Char Dham", href: "#" },
+    // { name: "Shop", href: "#" },
+    // { name: "Char Dham", href: "#" },
     { name: "Tours", href: "#" },
     { name: "Rental", href: "#" },
     { name: "Our World", href: "#" },
