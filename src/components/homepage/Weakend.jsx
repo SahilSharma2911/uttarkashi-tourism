@@ -14,7 +14,7 @@ const Weakend = () => {
                   WEEKEND TREKKING AND TOURS
                 </h3>
               </div>
-              <div className="w-42 h-[3px] bg-[#FB2056] mb-8"></div>
+              <div className="w-42 h-[3px] bg-[#1D3827] mb-8"></div>
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@ const Weakend = () => {
                 </p>
                 <a
                   href={"/"}
-                  className="inline-block bg-[#FB2056] hover:bg-white hover:text-black border-white border text-white px-6 py-2 rounded-sm font-semibold transition-all duration-300"
+                  className="inline-block bg-[#1D3827] hover:bg-white hover:text-black border-white border text-white px-6 py-2 rounded-sm font-semibold transition-all duration-300"
                 >
                   Learn More
                 </a>

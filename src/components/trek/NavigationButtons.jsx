@@ -40,7 +40,7 @@ const NavigationButtons = () => {
                     flex
                     items-center
                     justify-center
-                    bg-[#fb2056]
+                    bg-[#1D3827]
                     hover:bg-black
                     text-white
                     font-medium

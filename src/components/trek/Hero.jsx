@@ -35,7 +35,7 @@ const Hero = () => {
             {/* <p className="text-lg md:text-xl mb-8 leading-relaxed max-w-2xl mx-auto whitespace-pre-line">
               {slide.description}
             </p> */}
-            <button className="bg-[#FB2056] hover:bg-white hover:text-black border-white border text-white uppercase px-8 py-3 rounded-2xl text-lg font-semibold transition-all duration-300">
+            <button className="bg-[#1D3827] hover:bg-white hover:text-black border-white border text-white uppercase px-8 py-3 rounded-2xl text-lg font-semibold transition-all duration-300">
               {slide.buttonText}
             </button>
           </div>

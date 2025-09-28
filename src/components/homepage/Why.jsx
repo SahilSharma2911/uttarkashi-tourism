@@ -69,7 +69,7 @@ const Why = () => {
                   WHY CHOOSE US
                 </h3>
               </div>
-              <div className="w-42 h-[3px] bg-[#FB2056] mb-8"></div>
+              <div className="w-42 h-[3px] bg-[#1D3827] mb-8"></div>
             </div>
           </div>
         </div>

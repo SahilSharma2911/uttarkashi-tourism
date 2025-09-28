@@ -208,7 +208,7 @@ const TrekDetails = () => {
                     <h3 className="font-medium text-xl text-black">
                       {detail.title}
                     </h3>
-                    <p className="text-[#FB2056] font-semibold text-xl">
+                    <p className="text-[#1D3827] font-semibold text-xl">
                       {detail.description}
                     </p>
                   </div>
@@ -223,7 +223,7 @@ const TrekDetails = () => {
               <div className="flex items-center justify-center flex-col">
                 <p className="font-bold text-black mb-2">Trek Fees</p>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-3xl font-bold text-[#FB2056]">
+                  <span className="text-3xl font-bold text-[#1D3827]">
                     ₹16950
                   </span>
                   <span className="text-xl text-gray-500 line-through">
@@ -233,14 +233,14 @@ const TrekDetails = () => {
                 <p className="text-gray-600 mt-1 text-xs">Kafnu to Kaza</p>
               </div>
 
-              <div className="bg-[#FB2056]/5 p-4 text-center">
+              <div className="bg-[#1D3827]/5 p-4 text-center">
                 <h5 className="font-medium text-gray-800 mb-2">
                   Call our Pin Bhabha Pass Expert Mr. Devasheesh to know more
                   about the trek
                 </h5>
                 <a
                   href="tel:+918979920602"
-                  className="inline-flex items-center justify-center px-10 py-2 bg-[#FB2056] transition-colors text-sm rounded-2xl"
+                  className="inline-flex items-center justify-center px-10 py-2 bg-[#1D3827] transition-colors text-sm rounded-2xl"
                 >
                   Call Now
                 </a>
@@ -291,7 +291,7 @@ const TrekDetails = () => {
 
               <a
                 href="https://thesearchingsouls.com/trek/book/pin-bhabha-pass"
-                className="inline-flex items-center justify-center px-6 py-3 border border-white sgado bg-[#FB2056] text-white font-semibold rounded-lg hover:bg-green-700 transition-colors shadow-md"
+                className="inline-flex items-center justify-center px-6 py-3 border border-white sgado bg-[#1D3827] text-white font-semibold rounded-lg hover:bg-green-700 transition-colors shadow-md"
               >
                 <span>Book Now</span>
                 <svg

@@ -88,12 +88,12 @@ const Navbar = () => {
             {/* Logo and Company Name */}
             <div className="flex items-center gap-2 md:gap-4">
               <img
-                src="/logo.webp"
+                src="/logo.jpeg"
                 alt="The Searching Souls Logo"
                 className="h-8 md:h-12 w-auto"
               />
               <h1 className="text-sm md:text-xl font-bold text-gray-800">
-                The Searching Souls – चल एक सफर पे
+                Beyond Trails, Into the Wild.
               </h1>
             </div>
 
@@ -113,7 +113,7 @@ const Navbar = () => {
                 >
                   <a
                     href={item.href}
-                    className="flex items-center gap-1 text-gray-700 hover:text-[#FB2056] font-medium transition-colors duration-200"
+                    className="flex items-center gap-1 text-gray-700 hover:text-[#1D3827] font-medium transition-colors duration-200"
                   >
                     {item.name}
                     {item.hasDropdown && <ChevronDown className="w-4 h-4" />}
@@ -172,7 +172,7 @@ const Navbar = () => {
 
             {/* Mobile Hamburger Menu Button */}
             <button
-              className="lg:hidden p-2 text-gray-700 hover:text-[#FB2056] transition-colors duration-200"
+              className="lg:hidden p-2 text-gray-700 hover:text-[#1D3827] transition-colors duration-200"
               onClick={toggleMobileMenu}
             >
               {isMobileMenuOpen ? (
@@ -205,14 +205,14 @@ const Navbar = () => {
                 <div className="flex items-center justify-between py-3">
                   <a
                     href={item.href}
-                    className="text-gray-700 hover:text-[#FB2056] font-medium transition-colors duration-200"
+                    className="text-gray-700 hover:text-[#1D3827] font-medium transition-colors duration-200"
                   >
                     {item.name}
                   </a>
                   {item.hasDropdown && (
                     <button
                       onClick={() => toggleMobileDropdown(index)}
-                      className="p-1 text-gray-700 hover:text-[#FB2056]"
+                      className="p-1 text-gray-700 hover:text-[#1D3827]"
                     >
                       <ChevronDown
                         className={`w-4 h-4 transition-transform duration-200 ${
@@ -231,14 +231,14 @@ const Navbar = () => {
                         <div className="flex items-center justify-between py-2">
                           <a
                             href="#"
-                            className="text-gray-600 hover:text-[#FB2056] transition-colors duration-200"
+                            className="text-gray-600 hover:text-[#1D3827] transition-colors duration-200"
                           >
                             {subItem.name}
                           </a>
                           {subItem.hasSubDropdown && (
                             <button
                               onClick={() => toggleMobileSubDropdown(subIndex)}
-                              className="p-1 text-gray-600 hover:text-[#FB2056]"
+                              className="p-1 text-gray-600 hover:text-[#1D3827]"
                             >
                               <ChevronDown
                                 className={`w-3 h-3 transition-transform duration-200 ${
@@ -260,7 +260,7 @@ const Navbar = () => {
                                   <a
                                     key={subSubIndex}
                                     href="#"
-                                    className="block py-2 text-gray-500 hover:text-[#FB2056] transition-colors duration-200"
+                                    className="block py-2 text-gray-500 hover:text-[#1D3827] transition-colors duration-200"
                                   >
                                     {subSubItem}
                                   </a>
@@ -280,7 +280,7 @@ const Navbar = () => {
 
       {/* Trek Updates Section */}
       <section className="flex flex-col lg:flex-row">
-        <div className="bg-[#FB2056] text-lg md:text-2xl px-2 py-1 font-bold w-full lg:w-1/6 text-white text-center lg:text-left">
+        <div className="bg-[#1D3827] text-lg md:text-2xl px-2 py-1 font-bold w-full lg:w-1/6 text-white text-center lg:text-left">
           Trek Update
         </div>
         <div className="bg-white py-1 font-medium w-full lg:w-5/6 relative overflow-hidden">
@@ -302,7 +302,7 @@ const Navbar = () => {
               {duplicatedUpdates.map((update, index) => (
                 <span
                   key={index}
-                  className="bg-[#FB2056] text-white px-2 md:px-3 py-0.5 rounded-sm inline-block"
+                  className="bg-[#1D3827] text-white px-2 md:px-3 py-0.5 rounded-sm inline-block"
                 >
                   {update}
                 </span>

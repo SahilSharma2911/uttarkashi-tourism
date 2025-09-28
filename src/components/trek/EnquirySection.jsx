@@ -27,7 +27,7 @@ const EnquirySection = () => {
       <div className="">
         <div className="flex flex-col lg:flex-row gap-8 items-center justify-center">
           {/* Left Column - Form */}
-          <div className="w-full lg:w-1/2 bg-[#FB2056] rounded-b-xl shadow-lg">
+          <div className="w-full lg:w-1/2 bg-[#1D3827] rounded-b-xl shadow-lg">
             <div className="mb-6 p-3">
               <h2 className="text-2xl md:text-3xl font-bold text-white text-center">
                 Send Enquiry & Get Itinerary on WhatsApp

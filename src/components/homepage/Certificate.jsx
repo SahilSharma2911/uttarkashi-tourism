@@ -14,7 +14,7 @@ const Certificate = () => {
                   CERTIFICATES AND RECOGNITION
                 </h3>
               </div>
-              <div className="w-28 md:w-48 h-[3px] bg-[#FB2056] mb-8"></div>
+              <div className="w-28 md:w-48 h-[3px] bg-[#1D3827] mb-8"></div>
             </div>
           </div>
         </div>
@@ -91,7 +91,7 @@ const Certificate = () => {
                   IN THE MEDIA
                 </h3>
               </div>
-              <div className="w-48 h-[3px] bg-[#FB2056] mb-8"></div>
+              <div className="w-48 h-[3px] bg-[#1D3827] mb-8"></div>
             </div>
           </div>
         </div>

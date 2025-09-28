@@ -48,7 +48,7 @@ const RelatedTreks = () => {
                   href={trek.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center text-[#FB2056] uppercase tracking-wider text-sm font-semibold transition-colors"
+                  className="inline-flex items-center justify-center text-[#1D3827] uppercase tracking-wider text-sm font-semibold transition-colors"
                 >
                   Learn More
                     <svg 
