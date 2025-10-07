@@ -5,37 +5,33 @@ const Hero = () => {
     image:
       "https://www.thesearchingsouls.com/wp-content/uploads/2025/07/New-Project-2025-07-10T141630.183.jpg",
     title: "Pin Bhabha Pass Trek",
-    subtitle: "MOST DRAMATIC CROSS OVER TREK IN INDIA",
-    // description:
-    //   "Catering 10,000+ Trekkers Every Year!\nCall our Trek Experts on 8979920602, 8006074398",
+    subtitle: "Most Dramatic Cross Over Trek in India",
     buttonText: "Book Now",
   };
 
   return (
-    <div className="relative w-full h-[50vh] md:h-[78vh] overflow-hidden">
+    <div className="relative w-full h-[60vh] md:h-[80vh] lg:h-screen overflow-hidden">
       {/* Background Image */}
       <img
         src={slide.image}
         alt={slide.title}
         className="w-full h-full object-cover"
       />
-      {/* Overlay for text readability */}
+      {/* Original overlay */}
       <div className="absolute inset-0 bg-black/10 bg-opacity-40"></div>
 
       {/* Content Overlay */}
       <div className="absolute inset-0 z-10 flex items-center justify-center">
         <div className="text-center text-white px-6 max-w-4xl mx-auto">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-4xl md:text-6xl font-semibold mb-4 w-fit">
+            <h1 className="text-lg md:text-xl lg:text-2xl font-semibold mb-4 bg-[#1D3827]/80 px-4 py-2 rounded-full border border-white/30 uppercase tracking-wider">
               {slide.title}
             </h1>
-            <h2 className="text-2xl md:text-4xl font-semibold mb-6 text-white">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 tracking-tight">
               {slide.subtitle}
             </h2>
-            {/* <p className="text-lg md:text-xl mb-8 leading-relaxed max-w-2xl mx-auto whitespace-pre-line">
-              {slide.description}
-            </p> */}
-            <button className="bg-[#1D3827] hover:bg-white hover:text-black border-white border text-white uppercase px-8 py-3 rounded-2xl text-lg font-semibold transition-all duration-300">
+            <button className="bg-[#2a4b38] hover:bg-[#e1ed00] hover:text-[#1D3827] border border-white/50 text-white uppercase px-8 py-3 rounded-full text-lg font-semibold transition-all duration-300">
+              Groom
               {slide.buttonText}
             </button>
           </div>
