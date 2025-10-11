@@ -51,8 +51,8 @@ const TrekDetails = () => {
           <rect fill="#1e0f00" x="35" y="30" width="2" height="2"></rect>
         </svg>
       ),
-      title: "Trek Duration",
-      description: "8 Days",
+  title: "Trek Duration",
+  description: "4N 5D",
     },
     {
       icon: (
@@ -224,19 +224,15 @@ const TrekDetails = () => {
                 <p className="font-bold text-black mb-2">Trek Fees</p>
                 <div className="flex items-baseline gap-2">
                   <span className="text-3xl font-bold text-[#1D3827]">
-                    ₹16950
-                  </span>
-                  <span className="text-xl text-gray-500 line-through">
-                    ₹17950
+                    ₹6,500
                   </span>
                 </div>
-                <p className="text-gray-600 mt-1 text-xs">Kafnu to Kaza</p>
+                <p className="text-gray-600 mt-1 text-xs">4N 5D</p>
               </div>
 
               <div className="bg-[#1D3827]/5 p-4 text-center">
                 <h5 className="font-medium text-gray-800 mb-2">
-                  Call our Pin Bhabha Pass Expert Mr. Devasheesh to know more
-                  about the trek
+                  Call our Kyarkoti Harsil Trek Expert to know more about the trek
                 </h5>
                 <a
                   href="tel:+918979920602"
@@ -290,7 +286,7 @@ const TrekDetails = () => {
               </div>
 
               <a
-                href="https://thesearchingsouls.com/trek/book/pin-bhabha-pass"
+                href="https://thesearchingsouls.com/trek/book/kyarkoti-harsil"
                 className="inline-flex items-center justify-center px-6 py-3 border border-white sgado bg-[#1D3827] text-white font-semibold rounded-lg hover:bg-green-700 transition-colors shadow-md"
               >
                 <span>Book Now</span>

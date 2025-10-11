@@ -58,7 +58,7 @@ const TrekItinerary = () => {
       content: [
         "Leave for the Phutsirang camp site after breakfast",
         "Today is a continuous ascend.",
-        "You will get to witness - Hansbeshan Peak, Nimish Khango, Tari Khango, and Pin Bhaba Pass",
+  "You will get to witness alpine ridges, river valleys, and panoramic Himalayan views",
         "Hot lunch will be served at camp site",
       ],
     },
@@ -98,7 +98,7 @@ const TrekItinerary = () => {
   // Special features of the trek
   const specialFeatures = [
     "Takes you to a staggering altitude of 4908 m above sea level",
-    "Connects the lush green Bhabha Valley to the stark, cold and arid Pin Valley",
+  "Explores lush green valleys, alpine meadows and serene riverbanks",
     "Experience apple laden kafnu village and the arid mudh village in Spiti",
     "Forest, Meadows, Snow, Wildflowers, Rivers - Everything you can expect from a trek is delivered",
     "Less crowded and offbeat - not much people traverse on this trails",
@@ -110,25 +110,20 @@ const TrekItinerary = () => {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            Pin Bhabha Pass Trek Overview & Itinerary
+            Kyarkoti Harsil Trek Overview & Itinerary
           </h2>
           <p className="text-black max-w-6xl mx-auto text-left text-lg">
-            The Pin Bhabha pass trek is a high altitude pass situated at an
-            elevation of 4908 m above sea level. It connects the lush green
-            Bhabha Valley to the stark and arid pin Valley in Spiti. It is a
-            dramatic cross over trek and is one of the challenging options
-            available for people who want to hit higher altitude. You get to
-            witness everything on this trek starting from forests of mulling,
-            grasslands of mulling, Kashmir like meadows of Karah, the river
-            delta of Phutsirang and finally the Pin Bhabha Pass. Every Day is a
-            new adventure.
+            The Kyarkoti Harsil Trek is a scenic 4N 5D trek around the Harsil
+            region of Uttarakhand. Expect alpine forests, river valleys, and
+            panoramic Himalayan views. This itinerary outlines day-by-day
+            details for the trek.
           </p>
         </div>
 
         {/* Special Features Section */}
         <div className="mb-12">
           <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-            What is special about Pin Bhabha Pass Trek?
+            What is special about Kyarkoti Harsil Trek?
           </h3>
           <ul className="space-y-1">
             {specialFeatures.map((feature, index) => (
@@ -151,7 +146,7 @@ const TrekItinerary = () => {
         <div className="bg-white overflow-hidden">
           <div className="">
             <h3 className="text-2xl font-bold text-gray-800">
-              PIN BHABHA PASS TREK ITINERARY
+              KYARKOTI HARSIL TREK ITINERARY
             </h3>
           </div>
 

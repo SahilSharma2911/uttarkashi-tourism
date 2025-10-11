@@ -24,55 +24,55 @@ const Upcoming = () => {
   const trekData = {
     slider1: [
       {
-        title: "Pin Bhaba Pass",
-        subtitle: "Starting from ₹499, 5D/4N",
+        title: "Kyarkoti Harsil Trek",
+        subtitle: "Starting from ₹6,500, 4N/5D",
         description:
-          "The Pin Bhaba pass trek is a high altitude pass situated at an elevation of 4908 m above sea level. It connects the lush green Bhaba Valley to the stark and arid pin Valley in Spiti.",
-        link: "/pin-bhabha-pass-trek/",
+          "A scenic 4N 5D trek around the Harsil region featuring alpine forests, river valleys and panoramic Himalayan views.",
+        link: "/kyarkoti-harsil-trek/",
         image: "/chardham-yatra.webp",
       },
       {
-        title: "Pin Bhaba Pass",
-        subtitle: "Starting from ₹499, 5D/4N",
+        title: "Kyarkoti Harsil Trek",
+        subtitle: "Starting from ₹6,500, 4N/5D",
         description:
-          "It is a dramatic cross over trek and is one of the challenging options available for people who want to hit higher altitude.",
-        link: "/pin-bhabha-pass-trek/",
+          "Experience the serene beauty of Harsil with moderate trails suitable for nature lovers and photographers.",
+        link: "/kyarkoti-harsil-trek/",
         image: "/jumbo-bag.webp",
       },
     ],
     slider2: [
       {
-        title: "Valley of Flower",
-        subtitle: "Starting from ₹499, 5D/4N",
+        title: "Gulabi Kantha",
+        subtitle: "Starting from ₹8,000, 4N/5D",
         description:
-          "The Valley of Flowers is a breathtaking national park at 3,658 m, located in Bhyundar Valley, Chamoli district, Uttarakhand.",
-        link: "/valley-of-flowers-and-hemkund-sahib/",
+          "Gulabi Kantha is a scenic trek offering rhododendron forests, high-altitude meadows and sweeping Himalayan vistas near Harsil.",
+        link: "/gulabi-kantha/",
         image: "/tss-banner.webp",
       },
       {
-        title: "Valley of Flower",
-        subtitle: "Starting from ₹499, 5D/4N",
+        title: "Gulabi Kantha", 
+        subtitle: "Starting from ₹8,000, 4N/5D",
         description:
-          "It's a UNESCO World Heritage Site with lush forests, rivers, and waterfalls.",
-        link: "/valley-of-flowers-and-hemkund-sahib/",
+          "Ideal for nature lovers and photographers, Gulabi Kantha showcases vibrant flora and peaceful mountain landscapes.",
+        link: "/gulabi-kantha/",
         image: "/chardham-yatra.webp",
       },
     ],
     slider3: [
       {
-        title: "Hampta Pass Trek",
-        subtitle: "Starting from ₹499, 5D/4N",
+        title: "Dayara Bugyal",
+        subtitle: "Starting from ₹7,500, 4N/5D",
         description:
-          "Hampta Pass, one of the best treks in Kullu, Himachal Pradesh, lies at approx. 4,200 m in the Pir Panjal range, offering scenic views of both sides of the Himalayas.",
-        link: "/hampta-pass-trek/",
+          "Dayara Bugyal is a vast alpine meadow in Uttarakhand, known for rolling green pastures, panoramic Himalayan views and seasonal wildflowers.",
+        link: "/dayara-bugyal/",
         image: "/jumbo-bag.webp",
       },
       {
-        title: "Hampta Pass Trek",
-        subtitle: "Starting from ₹499, 5D/4N",
+        title: "Dayara Bugyal",
+        subtitle: "Starting from ₹7,500, 4N/5D",
         description:
-          "The trail is easy to moderate, suitable for all trekkers, offering a complete shift in landscape from Manali's green valleys to Spiti's rocky terrain, with views of snow-clad peaks and glaciers.",
-        link: "/hampta-pass-trek/",
+          "An excellent trek for beginners and nature lovers, offering easy trails and spectacular sunrise viewpoints.",
+        link: "/dayara-bugyal/",
         image: "/tss-banner.webp",
       },
     ],

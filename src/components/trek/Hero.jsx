@@ -4,8 +4,8 @@ const Hero = () => {
   const slide = {
     image:
       "https://www.thesearchingsouls.com/wp-content/uploads/2025/07/New-Project-2025-07-10T141630.183.jpg",
-    title: "Pin Bhabha Pass Trek",
-    subtitle: "Most Dramatic Cross Over Trek in India",
+    title: "Kyarkoti Harsil Trek",
+    subtitle: "4N 5D — A Scenic Uttarakhand Trek",
     buttonText: "Book Now",
   };
 
