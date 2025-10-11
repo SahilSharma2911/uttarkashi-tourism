@@ -117,15 +117,12 @@ const EnquirySection = () => {
         {/* Right Column - Pricing */}
         <div className="w-full lg:w-1/2 bg-white border border-[#2a4b38]/30 rounded-xl shadow-lg p-6">
           <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#1D3827] uppercase tracking-wider text-center bg-white/80 px-4 py-2 rounded-full border border-[#2a4b38]/30 mb-6">
-            Pin Bhabha Pass
+            Kyarkoti Harsil Trek
           </h2>
           <div className="py-4 border-t border-[#2a4b38]/20">
             <div className="flex justify-center items-center">
-              <span className="text-gray-500 line-through mr-3 text-lg md:text-xl">
-                ₹17,950
-              </span>
               <span className="text-2xl md:text-3xl font-bold text-[#2a4b38]">
-                ₹16,950
+                ₹6,500
               </span>
             </div>
           </div>
