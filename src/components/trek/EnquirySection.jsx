@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const EnquirySection = () => {
+const EnquirySection = ({ data }) => {
   const [formData, setFormData] = useState({
     name: "",
     contact: "",
@@ -117,128 +117,34 @@ const EnquirySection = () => {
         {/* Right Column - Pricing */}
         <div className="w-full lg:w-1/2 bg-white border border-[#2a4b38]/30 rounded-xl shadow-lg p-6">
           <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#1D3827] uppercase tracking-wider text-center bg-white/80 px-4 py-2 rounded-full border border-[#2a4b38]/30 mb-6">
-            Kyarkoti Harsil Trek
+            {data.trekName}
           </h2>
           <div className="py-4 border-t border-[#2a4b38]/20">
             <div className="flex justify-center items-center">
               <span className="text-2xl md:text-3xl font-bold text-[#2a4b38]">
-                ₹6,500
+                {data.price}
               </span>
             </div>
           </div>
           <ul className="space-y-4">
-            <li className="flex items-start border-b border-[#2a4b38]/20 py-2">
-              <svg
-                className="w-5 h-5 text-[#e1ed00] mt-0.5 mr-3 flex-shrink-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              <span className="text-sm md:text-base text-[#1D3827]">
-                Kafnu to Kaza all inclusive
-              </span>
-            </li>
-            <li className="flex items-start border-b border-[#2a4b38]/20 py-2">
-              <svg
-                className="w-5 h-5 text-[#e1ed00] mt-0.5 mr-3 flex-shrink-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              <span className="text-sm md:text-base text-[#1D3827]">
-                Book Now at Just ₹4000
-              </span>
-            </li>
-            <li className="flex items-start border-b border-[#2a4b38]/20 py-2">
-              <svg
-                className="w-5 h-5 text-[#e1ed00] mt-0.5 mr-3 flex-shrink-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              <span className="text-sm md:text-base text-[#1D3827]">
-                We are largest Service providers in Uttarakhand. i.e No outsourcing
-              </span>
-            </li>
-            <li className="flex items-start border-b border-[#2a4b38]/20 py-2">
-              <svg
-                className="w-5 h-5 text-[#e1ed00] mt-0.5 mr-3 flex-shrink-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              <span className="text-sm md:text-base text-[#1D3827]">
-                Highest Rated Trekking Company in India
-              </span>
-            </li>
-            <li className="flex items-start border-b border-[#2a4b38]/20 py-2">
-              <svg
-                className="w-5 h-5 text-[#e1ed00] mt-0.5 mr-3 flex-shrink-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              <span className="text-sm md:text-base text-[#1D3827]">
-                First Company to Introduce Jumbo Bag (Includes all Trekking Gear)
-              </span>
-            </li>
-            <li className="flex items-start border-b border-[#2a4b38]/20 py-2">
-              <svg
-                className="w-5 h-5 text-[#e1ed00] mt-0.5 mr-3 flex-shrink-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              <span className="text-sm md:text-base text-[#1D3827]">
-                Certified by IMF, ATAOI, Startup India, Uttarakhand Tourism, MSME and STU
-              </span>
-            </li>
-            <li className="flex items-start border-b border-[#2a4b38]/20 py-2">
-              <svg
-                className="w-5 h-5 text-[#e1ed00] mt-0.5 mr-3 flex-shrink-0"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  clipRule="evenodd"
-                />
-              </svg>
-              <span className="text-sm md:text-base text-[#1D3827]">
-                Top 10 Most Promising Adventure Travel Company in India
-              </span>
-            </li>
+            {data.features.map((feature, index) => (
+              <li key={index} className="flex items-start border-b border-[#2a4b38]/20 py-2">
+                <svg
+                  className="w-5 h-5 text-[#e1ed00] mt-0.5 mr-3 flex-shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                <span className="text-sm md:text-base text-[#1D3827]">
+                  {feature}
+                </span>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

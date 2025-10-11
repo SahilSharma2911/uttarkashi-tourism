@@ -27,33 +27,32 @@ const Navbar = () => {
   const [activeMobileSubDropdown, setActiveMobileSubDropdown] = useState(null);
 
   const navItems = [
-    { name: "Home", href: "#" },
+    { name: "Home", href: "/" },
     {
       name: "Treks",
       href: "#",
       hasDropdown: true,
       subItems: [
         {
-          name: "Himalayan Treks",
-          hasSubDropdown: true,
-          subSubItems: [
-            "Everest Base Camp",
-            "Annapurna Circuit",
-            "Manaslu Trek",
-          ],
+          name: "Kyarkoti Harsil Trek",
+          href: "/kyarkoti-harsil-trek",
+          hasSubDropdown: false,
         },
         {
-          name: "Sahyadri Treks",
-          hasSubDropdown: true,
-          subSubItems: ["Rajgad Trek", "Harishchandragad", "Kalsubai Peak"],
+          name: "Gulabi Kantha",
+          href: "/gulabi-kantha",
+          hasSubDropdown: false,
         },
         {
-          name: "Valley of Flowers",
-          hasSubDropdown: true,
-          subSubItems: ["Hemkund Sahib", "Valley Trek", "Nanda Devi"],
+          name: "Dayara Bugyal",
+          href: "/dayara-bugyal",
+          hasSubDropdown: false,
         },
-        { name: "Adventure Treks", hasSubDropdown: false },
-        { name: "Monsoon Treks", hasSubDropdown: false },
+        {
+          name: "Bhrigu Lake Trek",
+          href: "/bhrigu-lake-trek",
+          hasSubDropdown: false,
+        },
       ],
     },
     { name: "Tours", href: "#" },
@@ -151,51 +150,13 @@ const Navbar = () => {
                       transition={{ duration: 0.2 }}
                     >
                       {item.subItems.map((subItem, subIndex) => (
-                        <div
+                        <a
                           key={subIndex}
-                          className="relative group/sub"
-                          onMouseEnter={() =>
-                            setActiveSubDropdown(
-                              subItem.hasSubDropdown ? subIndex : null
-                            )
-                          }
-                          onMouseLeave={() =>
-                            !subItem.hasSubDropdown &&
-                            setActiveSubDropdown(null)
-                          }
+                          href={subItem.href}
+                          className="flex items-center justify-between px-4 py-2.5 text-sm font-medium hover:bg-[#2a4b38] hover:text-white rounded-lg transition-colors duration-200 block"
                         >
-                          <a
-                            href="#"
-                            className="flex items-center justify-between px-4 py-2.5 text-sm font-medium hover:bg-[#2a4b38] hover:text-white rounded-lg transition-colors duration-200"
-                          >
-                            {subItem.name}
-                            {subItem.hasSubDropdown && (
-                              <ChevronRight className="w-4 h-4" />
-                            )}
-                          </a>
-
-                          {subItem.hasSubDropdown &&
-                            activeSubDropdown === subIndex && (
-                              <motion.div
-                                className="absolute top-0 left-full bg-white/95 backdrop-blur-md text-gray-900 rounded-xl shadow-2xl p-4 min-w-60 z-50 border border-gray-200/50"
-                                initial={{ opacity: 0, x: -10 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ duration: 0.2 }}
-                              >
-                                {subItem.subSubItems.map(
-                                  (subSubItem, subSubIndex) => (
-                                    <a
-                                      key={subSubIndex}
-                                      href="#"
-                                      className="block px-4 py-2.5 text-sm font-medium hover:bg-[#2a4b38] hover:text-white rounded-lg transition-colors duration-200"
-                                    >
-                                      {subSubItem}
-                                    </a>
-                                  )
-                                )}
-                              </motion.div>
-                            )}
-                        </div>
+                          {subItem.name}
+                        </a>
                       ))}
                     </motion.div>
                   )}
@@ -260,48 +221,13 @@ const Navbar = () => {
                 {item.hasDropdown && activeMobileDropdown === index && (
                   <div className="pl-6 pb-3">
                     {item.subItems.map((subItem, subIndex) => (
-                      <div key={subIndex} className="py-2">
-                        <div className="flex items-center justify-between py-2">
-                          <a
-                            href="#"
-                            className="text-gray-100 hover:text-[#e1ed00] text-sm font-medium transition-colors duration-300"
-                          >
-                            {subItem.name}
-                          </a>
-                          {subItem.hasSubDropdown && (
-                            <button
-                              onClick={() => toggleMobileSubDropdown(subIndex)}
-                              className="p-2 text-gray-100 hover:text-[#e1ed00]"
-                            >
-                              <ChevronDown
-                                className={`w-4 h-4 transition-transform duration-200 ${
-                                  activeMobileSubDropdown === subIndex
-                                    ? "rotate-180"
-                                    : ""
-                                }`}
-                              />
-                            </button>
-                          )}
-                        </div>
-
-                        {/* Mobile Second Level Dropdown */}
-                        {subItem.hasSubDropdown &&
-                          activeMobileSubDropdown === subIndex && (
-                            <div className="pl-6">
-                              {subItem.subSubItems.map(
-                                (subSubItem, subSubIndex) => (
-                                  <a
-                                    key={subSubIndex}
-                                    href="#"
-                                    className="block py-2 text-gray-200 hover:text-[#e1ed00] text-sm font-medium transition-colors duration-300"
-                                  >
-                                    {subSubItem}
-                                  </a>
-                                )
-                              )}
-                            </div>
-                          )}
-                      </div>
+                      <a
+                        key={subIndex}
+                        href={subItem.href}
+                        className="block py-2 text-gray-100 hover:text-[#e1ed00] text-sm font-medium transition-colors duration-300"
+                      >
+                        {subItem.name}
+                      </a>
                     ))}
                   </div>
                 )}

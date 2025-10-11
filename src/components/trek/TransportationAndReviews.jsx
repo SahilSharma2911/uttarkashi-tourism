@@ -1,26 +1,9 @@
 import React, { useState } from 'react';
 
-const TransportationAndReviews = () => {
-  // Transportation data
-  const transportationItems = [
-    "No of Persons (5-7)  : Tata Sumo/Mahindra Bolero or Equivalent Vehicle",
-    "No of Persons (8-13): Tempo Traveler",
-    "Selection of vehicle depends on availability. In group departures vehicles are Non AC"
-  ];
-
-  // Sample review images
-  const reviewImages = [
-    "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/aBT1.jpg",
-    "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/aDB2.jpg",
-    "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/aHP1.jpg",
-    "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/aKGL-1.jpg",
-    "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/aKK-New-2.jpg",
-    "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/aSP1.jpg"
-  ];
-
+const TransportationAndReviews = ({ data }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const itemsPerView = 3;
-  const totalSlides = Math.ceil(reviewImages.length / itemsPerView);
+  const totalSlides = Math.ceil(data.reviewImages.length / itemsPerView);
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % totalSlides);
@@ -42,7 +25,7 @@ const TransportationAndReviews = () => {
           <div className="bg-white p-6 md:p-8">
             <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">MODE OF TRANSPORTATION</h2>
             <ul className="space-y-2">
-              {transportationItems.map((item, index) => (
+              {data.items.map((item, index) => (
                 <li key={index} className="flex items-start">
                   <svg 
                     className="w-5 h-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" 
@@ -80,7 +63,7 @@ const TransportationAndReviews = () => {
                 {Array.from({ length: totalSlides }, (_, slideIndex) => (
                   <div key={slideIndex} className="w-full flex-shrink-0">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-2">
-                      {reviewImages
+                      {data.reviewImages
                         .slice(slideIndex * itemsPerView, (slideIndex + 1) * itemsPerView)
                         .map((image, imageIndex) => (
                           <div 

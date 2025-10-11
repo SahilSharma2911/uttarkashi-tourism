@@ -1,28 +1,6 @@
 import React from 'react';
 
-const GearAndInclusions = () => {
-  // Inclusions data
-  const inclusions = [
-    "Kafnu to Kaza Trek",
-    "Meals - (Veg Only- Breakfast, Lunch, Evening Snacks and Dinner)",
-    "Accommodation in homestay/guest house on Triple/Quad Sharing Basis",
-    "Experienced Trek Leader, Professional Guides and a very supportive staff",
-    "Forest permits",
-    "Medical Amenities – First Aid Kits, Oxymeters, oxygen cylinders.",
-    "Sanitised and Hygienic Camp sites and Hotels"
-  ];
-
-  // Exclusions data
-  const exclusions = [
-    "Anything not mentioned in inclusion list",
-    "5% GST",
-    "Meals during Transportation",
-    "Any kind of personal Expenses",
-    "Unscheduled or extended stay due to road blocks, Landslides",
-    "Porter/mule charges (Personal), Back pack offloading Charges",
-    "Cost of Evacuation in case of emergency"
-  ];
-
+const GearAndInclusions = ({ data }) => {
   return (
     <div>
       {/* Gear Rental Section */}
@@ -32,7 +10,7 @@ const GearAndInclusions = () => {
             Ready for Adventure? Rent Your Trek Gear Today
           </h2>
           <a
-            href="https://www.thesearchingsouls.com/rentalproduct/"
+            href={data.rentalUrl}
             className="inline-flex items-center justify-center px-6 py-2 border border-white shadow-md bg-green-500 text-white font-semibold rounded-2xl  transition-colors"
           >
             <span>Rent Now</span>
@@ -56,7 +34,7 @@ const GearAndInclusions = () => {
             <div className="border-gray-300 border shadow-lg p-6">
               <h2 className="text-2xl font-bold text-gray-800 mb-6">INCLUSIONS</h2>
               <ul className="space-y-4">
-                {inclusions.map((item, index) => (
+                {data.inclusions.map((item, index) => (
                   <li key={index} className="flex items-start">
                     <svg 
                       className="w-5 h-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" 
@@ -75,7 +53,7 @@ const GearAndInclusions = () => {
             <div className="border-gray-300 border shadow-lg p-6">
               <h2 className="text-2xl font-bold text-gray-800 mb-6">EXCLUSIONS</h2>
               <ul className="space-y-4">
-                {exclusions.map((item, index) => (
+                {data.exclusions.map((item, index) => (
                   <li key={index} className="flex items-start">
                     <svg 
                       className="w-5 h-5 text-red-500 mt-0.5 mr-3 flex-shrink-0" 

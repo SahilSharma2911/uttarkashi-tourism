@@ -29,7 +29,7 @@ const Upcoming = () => {
         description:
           "A scenic 4N 5D trek around the Harsil region featuring alpine forests, river valleys and panoramic Himalayan views.",
         link: "/kyarkoti-harsil-trek/",
-        image: "/chardham-yatra.webp",
+        image: "/qq.webp",
       },
       {
         title: "Kyarkoti Harsil Trek",
@@ -37,7 +37,7 @@ const Upcoming = () => {
         description:
           "Experience the serene beauty of Harsil with moderate trails suitable for nature lovers and photographers.",
         link: "/kyarkoti-harsil-trek/",
-        image: "/jumbo-bag.webp",
+        image: "/qq.webp",
       },
     ],
     slider2: [
@@ -47,7 +47,7 @@ const Upcoming = () => {
         description:
           "Gulabi Kantha is a scenic trek offering rhododendron forests, high-altitude meadows and sweeping Himalayan vistas near Harsil.",
         link: "/gulabi-kantha/",
-        image: "/tss-banner.webp",
+        image: "/aa.webp",
       },
       {
         title: "Gulabi Kantha", 
@@ -55,7 +55,7 @@ const Upcoming = () => {
         description:
           "Ideal for nature lovers and photographers, Gulabi Kantha showcases vibrant flora and peaceful mountain landscapes.",
         link: "/gulabi-kantha/",
-        image: "/chardham-yatra.webp",
+        image: "/aa.webp",
       },
     ],
     slider3: [
@@ -65,7 +65,7 @@ const Upcoming = () => {
         description:
           "Dayara Bugyal is a vast alpine meadow in Uttarakhand, known for rolling green pastures, panoramic Himalayan views and seasonal wildflowers.",
         link: "/dayara-bugyal/",
-        image: "/jumbo-bag.webp",
+        image: "/db.avif",
       },
       {
         title: "Dayara Bugyal",
@@ -73,7 +73,7 @@ const Upcoming = () => {
         description:
           "An excellent trek for beginners and nature lovers, offering easy trails and spectacular sunrise viewpoints.",
         link: "/dayara-bugyal/",
-        image: "/tss-banner.webp",
+        image: "/db.avif",
       },
     ],
     slider4: [
@@ -83,7 +83,7 @@ const Upcoming = () => {
         description:
           "Bhrigu Lake trek is a high altitude trek in Kullu district of Himanchal Pradesh. It is situated at an altitude of 4300 metres.",
         link: "/bhrigu-lake-trek/",
-        image: "/chardham-yatra.webp",
+        image: "/ll.png",
       },
       {
         title: "Bhrigu Lake Trek",
@@ -91,7 +91,7 @@ const Upcoming = () => {
         description:
           "The view of stars is so clear that you will feel like you are watching a HD TV full of stars; If you are a photographer you can capture the beauty.",
         link: "/bhrigu-lake-trek/",
-        image: "/jumbo-bag.webp",
+        image: "/ll.png",
       },
     ],
   };
@@ -183,17 +183,17 @@ const Upcoming = () => {
       {/* Navigation Arrows */}
       <button
         onClick={() => prevSlide(sliderId)}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20 text-white bg-[#2a4b38]/80 hover:bg-[#2a4b38] rounded-full p-2 transition-all duration-300 backdrop-blur-sm cursor-pointer"
+        className="absolute left-2 top-1/2 -translate-y-1/2 z-20 text-white bg-[#2a4b38]/80 hover:bg-[#2a4b38] rounded-full p-1 transition-all duration-300 backdrop-blur-sm cursor-pointer"
         disabled={isAnimating[sliderId]}
       >
-        <ChevronLeft size={28} />
+        <ChevronLeft size={18} />
       </button>
       <button
         onClick={() => nextSlide(sliderId)}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20 text-white bg-[#2a4b38]/80 hover:bg-[#2a4b38] rounded-full p-2 transition-all duration-300 backdrop-blur-sm cursor-pointer"
+        className="absolute right-2 top-1/2 -translate-y-1/2 z-20 text-white bg-[#2a4b38]/80 hover:bg-[#2a4b38] rounded-full p-1 transition-all duration-300 backdrop-blur-sm cursor-pointer"
         disabled={isAnimating[sliderId]}
       >
-        <ChevronRight size={28} />
+        <ChevronRight size={18} />
       </button>
 
       {/* Content Overlay */}
@@ -216,7 +216,7 @@ const Upcoming = () => {
                   <h4 className="text-base md:text-lg font-semibold mb-4">
                     {trek.subtitle}
                   </h4>
-                  <p className="text-sm md:text-base leading-relaxed mb-6 max-w-xl mx-auto">
+                  <p className="text-sm md:text-base leading-relaxed mb-6 max-w-xl mx-auto px-5">
                     {trek.description}
                   </p>
                   <button className="bg-[#2a4b38] hover:bg-[#e1ed00] hover:text-[#1D3827] border border-white/50 text-white px-6 py-2 rounded-full text-base font-semibold transition-all duration-300">
