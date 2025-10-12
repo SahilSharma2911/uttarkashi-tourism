@@ -48,11 +48,11 @@ const Navbar = () => {
           href: "/dayara-bugyal",
           hasSubDropdown: false,
         },
-        {
-          name: "Bhrigu Lake Trek",
-          href: "/bhrigu-lake-trek",
-          hasSubDropdown: false,
-        },
+        // {
+        //   name: "Bhrigu Lake Trek",
+        //   href: "/bhrigu-lake-trek",
+        //   hasSubDropdown: false,
+        // },
       ],
     },
     { name: "Tours", href: "#" },

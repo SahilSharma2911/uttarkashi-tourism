@@ -8,7 +8,7 @@ export const trekData = {
     hero: {
       image: "/qq.webp",
       title: "Kyarkoti Harsil Trek",
-      subtitle: "4N 5D — A Scenic Uttarakhand Trek",
+      subtitle: "5N 6D — Alpine Adventure in Himachal Pradesh",
       buttonText: "Book Now",
     },
 
@@ -27,71 +27,72 @@ export const trekData = {
       trekName: "Kyarkoti Harsil Trek",
       price: "₹6,500",
       features: [
-        "Kafnu to Kaza all inclusive",
-        "Book Now at Just ₹4000",
-        "We are largest Service providers in Uttarakhand. i.e No outsourcing",
+        "Kafnu to Kaza all inclusive package",
+        "Book Now at Just ₹4,000",
+        "No outsourcing - largest service provider in Uttarakhand",
         "Highest Rated Trekking Company in India",
-        "First Company to Introduce Jumbo Bag (Includes all Trekking Gear)",
-        "Certified by IMF, ATAOI, Startup India, Uttarakhand Tourism, MSME and STU",
-        "Top 10 Most Promising Adventure Travel Company in India",
+        "First Company to Introduce Jumbo Bag",
+        "Certified by IMF, ATAOI, Startup India, Uttarakhand Tourism",
+        "Top 10 Most Promising Adventure Travel Company",
       ],
     },
 
     trekDetails: {
       details: [
-        { icon: "calendar", title: "Trek Duration", description: "4N 5D" },
+        { icon: "calendar", title: "Trek Duration", description: "5N 6D" },
         { icon: "distance", title: "Trek Distance", description: "41 Km" },
         {
           icon: "difficulty",
           title: "Difficulty Level",
           description: "Moderate to Difficult",
         },
-        { icon: "altitude", title: "Altitude", description: "16100 Ft." },
+        { icon: "altitude", title: "Max Altitude", description: "4,200 m (13,780 ft)" },
         {
           icon: "season",
           title: "Best Season",
-          description: "July- Early Sept",
+          description: "July - Early September",
         },
       ],
       pricing: {
         amount: "₹6,500",
-        duration: "4N 5D",
+        duration: "5N 6D",
         phone: "+918979920602",
         bookingUrl: "https://thesearchingsouls.com/trek/book/kyarkoti-harsil",
       },
       addOns: [
-        "Transportation available at ₹ 3500/person from Shimla to Kafnu and Kaza to Manali",
-        "Back Pack offloading ₹ 4000/person",
+        "Transportation: ₹3,500/person from Shimla to Kafnu and Kaza to Manali",
+        "Backpack offloading: ₹4,000/person",
       ],
     },
 
     gearAndInclusions: {
       rentalUrl: "https://www.thesearchingsouls.com/rentalproduct/",
       inclusions: [
-        "Kafnu to Kaza Trek",
-        "Meals - (Veg Only- Breakfast, Lunch, Evening Snacks and Dinner)",
-        "Accommodation in homestay/guest house on Triple/Quad Sharing Basis",
-        "Experienced Trek Leader, Professional Guides and a very supportive staff",
-        "Forest permits",
-        "Medical Amenities – First Aid Kits, Oxymeters, oxygen cylinders.",
-        "Sanitised and Hygienic Camp sites and Hotels",
+        "Kafnu to Kaza Trek package",
+        "All Meals - Vegetarian (Breakfast, Lunch, Dinner, Evening Snacks)",
+        "Accommodation in homestay/guest house on sharing basis",
+        "Expert Trek Leader and professional guides",
+        "Forest permits and entry fees",
+        "Medical Amenities - First Aid Kits, Oxymeters, Oxygen cylinders",
+        "Sanitised and hygienic campsites",
       ],
       exclusions: [
-        "Anything not mentioned in inclusion list",
+        "Items not mentioned in inclusions",
         "5% GST",
-        "Meals during Transportation",
-        "Any kind of personal Expenses",
-        "Unscheduled or extended stay due to road blocks, Landslides",
-        "Porter/mule charges (Personal), Back pack offloading Charges",
-        "Cost of Evacuation in case of emergency",
+        "Meals during transportation",
+        "Personal expenses",
+        "Delays due to weather or road blocks",
+        "Backpack offloading charges (separate add-on)",
+        "Cost of emergency evacuation",
       ],
     },
 
     transportation: {
       items: [
-        "No of Persons (5-7): Tata Sumo/Mahindra Bolero or Equivalent Vehicle",
-        "No of Persons (8-13): Tempo Traveler",
-        "Selection of vehicle depends on availability. In group departures vehicles are Non AC",
+        "5-7 persons: Tata Sumo/Mahindra Bolero or equivalent",
+        "8-13 persons: Tempo Traveler",
+        "Vehicle selection based on availability",
+        "Non-AC vehicles for group departures",
       ],
       reviewImages: [
         "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/aBT1.jpg",
@@ -105,70 +106,90 @@ export const trekData = {
 
     itinerary: {
       overview:
-        "The Kyarkoti Harsil Trek is a scenic 4N 5D trek around the Harsil region of Uttarakhand. Expect alpine forests, river valleys, and panoramic Himalayan views.",
+        "The Kyarkoti Harsil Trek is a scenic 5N 6D alpine adventure in Himachal Pradesh. This trek takes you through pristine valleys, alpine meadows, snow-covered peaks, and offers spectacular Himalayan views with minimal crowds.",
       specialFeatures: [
-        "Takes you to a staggering altitude of 16100 ft above sea level",
-        "Explores lush green valleys, alpine meadows and serene riverbanks",
-        "Experience apple laden kafnu village and the arid mudh village in Spiti",
-        "Forest, Meadows, Snow, Wildflowers, Rivers - Everything you can expect from a trek is delivered",
-        "Less crowded and offbeat - not much people traverse on this trails",
+        "Reaches maximum altitude of 4,200m (13,780 ft)",
+        "Stunning alpine meadows and serene riverbanks",
+        "Explores apple-laden Kafnu village and arid Mudh village",
+        "Diverse ecosystems: forests, meadows, snow, wildflowers, rivers",
+        "Off-beat trek with fewer trekkers - less crowded trails",
       ],
       days: [
         {
           day: "Day 1: Shimla to Kafnu",
           details:
-            "Drive Distance: 200 km | Drive Duration: 7-8 hours | Altitude: 2450 m",
+            "Drive Distance: 200 km | Duration: 7-8 hours | Altitude: 2,450 m",
           content: [
             "Pick up from Shimla bus stand at 6:30 AM",
-            "Breakfast and lunch on the way",
-            "Overnight stay in a guest house in Kafnu Village.",
+            "Breakfast and lunch en route",
+            "Arrive at Kafnu village by evening",
+            "Overnight stay in guest house",
+            "Evening orientation and acclimatization",
           ],
         },
         {
           day: "Day 2: Kafnu to Mulling",
           details:
-            "Trek: 11 km | Trek Duration: 7-8 hrs | Altitude gain: 2450 m to 3200 m",
+            "Trek Distance: 11 km | Duration: 7-8 hours | Altitude: 2,450 m to 3,200 m",
           content: [
-            "Trek to Mulling after breakfast",
-            "First half is a gradual ascend second half slightly difficult",
-            "Today's trail is mostly forest covered",
-            "Packed lunch for the day",
-            "Overnight in Camps at Mulling",
+            "Trek begins after breakfast",
+            "First half involves gradual ascent through forest",
+            "Second half becomes slightly more challenging",
+            "Trail mostly forest-covered with oak trees",
+            "Packed lunch during the trek",
+            "Overnight camping at Mulling",
           ],
         },
         {
           day: "Day 3: Mulling to Karah",
           details:
-            "Trek distance: 6 km | Trek Duration: 5 hours | Altitude gain: 3200 m to 3550 m",
+            "Trek Distance: 6 km | Duration: 5 hours | Altitude: 3,200 m to 3,550 m",
           content: [
-            "Leave for Karah Camp site after breakfast",
-            "Today's trek is easy only the last 1 km is a steep ascend",
-            "Hot lunch will be served at camp site",
-            "Evening acclimatisation activities",
-            "Overnight in camps",
+            "Trek to Karah campsite after breakfast",
+            "Easy trek with only the last 1 km being steep",
+            "Traverse through alpine meadows",
+            "Hot lunch served at campsite",
+            "Afternoon acclimatization activities",
+            "Overnight camping at Karah",
           ],
         },
         {
-          day: "Day 4: Rest and Acclimatisation at Karah",
-          details: "",
+          day: "Day 4: Rest and Acclimatization at Karah",
+          details: "Altitude: 3,550 m",
           content: [
-            "This day is kept for rest and acclimatisation.",
-            "Some team games and acclimatisation activities will be conducted by our team",
+            "Full day for rest and acclimatization",
+            "Team games and acclimatization activities",
+            "Explore nearby areas and take photographs",
+            "Briefing for upcoming summit push",
+            "Overnight at Karah campsite",
           ],
         },
         {
-          day: "Day 5: Kara to Phutsirang",
+          day: "Day 5: Karah to Phutsirang",
           details:
-            "Trek distance: 5 km | Trek Duration: 5-6 hours | Altitude: 3550 m to 4200 m",
+            "Trek Distance: 5 km | Duration: 5-6 hours | Altitude: 3,550 m to 4,200 m",
           content: [
-            "Leave for the Phutsirang camp site after breakfast",
-            "Today is a continuous ascend",
-            "You will get to witness alpine ridges, river valleys, and panoramic Himalayan views",
-            "Hot lunch will be served at camp site",
+            "Trek to Phutsirang campsite after breakfast",
+            "Continuous ascent throughout the day",
+            "Witness alpine ridges and panoramic Himalayan views",
+            "Spectacular views of snow-capped peaks",
+            "Hot lunch at the campsite",
+            "Overnight camping at Phutsirang (highest point)",
+          ],
+        },
+        {
+          day: "Day 6: Phutsirang to Kaza and Return",
+          details: "Trek Distance: 12 km | Descent and drive back",
+          content: [
+            "Sunrise at Phutsirang with stunning views",
+            "Descend to Kaza village",
+            "Lunch at Kaza",
+            "Drive to Manali or Rampur (transportation as per add-on)",
+            "Trek concludes",
           ],
         },
       ],
-      note: "It is advised to keep a buffer day for this trek in case of bad weather or any unforeseen situation.",
+      note: "It is strongly advised to keep a buffer day for this trek in case of bad weather or unforeseen situations. Altitude acclimatization is important.",
     },
 
     safetyVideos: [
@@ -188,19 +209,19 @@ export const trekData = {
           "https://www.thesearchingsouls.com/wp-content/uploads/2021/10/Higesht-Rated.jpg",
         title: "Highest Rated",
         description:
-          "Top-rated trekking company with excellent customer reviews",
+          "Top-rated trekking company with excellent customer reviews and ratings",
       },
       {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2021/10/Jumbo-Bag.jpg",
-        title: "First Jumbo Bag",
-        description: "Innovative all-in-one trekking gear solution",
+        title: "Jumbo Bag Innovation",
+        description: "First to introduce all-in-one trekking gear solution",
       },
       {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2021/10/Easy-rescheduling.jpg",
         title: "Easy Rescheduling",
-        description: "Flexible booking and rescheduling options",
+        description: "Flexible booking and hassle-free rescheduling options",
       },
     ],
 
@@ -208,61 +229,62 @@ export const trekData = {
       {
         category: "Basic Trek Essentials",
         items: [
-          "Rucksack (60-70 ltr with cover)",
-          "Down Jacket",
-          "Fleece",
-          "Gloves (Woollen and Waterproof)",
-          "Poncho or a Rain Coat",
-          "Trekking Pole",
-          "Head Torch",
-          "Trek Shoes - Men or Women",
-          "Trek Pant – 2 Nos. Preferred",
-          "Day Pack (20-30 litres)",
+          "Rucksack (60-70 liters with rain cover)",
+          "Down jacket (essential at high altitude)",
+          "Fleece or wool sweater",
+          "Gloves (woollen and waterproof)",
+          "Rain jacket or poncho",
+          "Trekking poles",
+          "Headlamp with extra batteries",
+          "Trekking shoes (broken-in)",
+          "Trekking pants (2 pairs)",
+          "Day pack (20-30 liters)",
         ],
       },
       {
-        category: "Clothes",
+        category: "Clothing",
         items: [
-          "A pair of Thermals",
-          "Warm Socks and cotton socks (2-3 pair)",
-          "Woollen Cap",
-          "Sun Cap",
-          "Gloves (Woollen and waterproof)",
-          "Extra Layering of Warm Clothing as per necessity",
-          "Extra lowers for Nights",
-          "Balaclava",
+          "Thermal inner wear (top and bottom)",
+          "Warm socks (4-5 pairs)",
+          "Cotton socks (2 pairs)",
+          "Woollen cap",
+          "Sun cap",
+          "Extra warm layers",
+          "Spare lower wear for nights",
+          "Balaclava or neck gaiter",
         ],
       },
       {
         category: "Personal Utilities",
         items: [
-          "Sun Glasses (UV Protected)",
-          "Hand Towel",
-          "Sun Screen Lotion (Min SPF- 30)",
-          "Moisturiser",
-          "Lunch box, Coffee mug and spoon",
-          "Water bottle or Hydration Bag",
-          "Sandals",
-          "Basic First Aid",
-          "Energy Bars",
+          "Sunglasses (UV protected)",
+          "Sunscreen lotion (SPF 40+)",
+          "Moisturizer and lip balm",
+          "Hand towel",
+          "Lunch box and utensils",
+          "Water bottle (2-3 liters capacity)",
+          "Sandals for camp",
+          "Personal first aid kit",
+          "Energy bars and dry fruits",
         ],
       },
       {
         category: "Toiletries",
         items: [
           "Toilet paper rolls",
-          "Towels",
+          "Towel (quick-dry)",
           "Wet wipes (unscented)",
-          "Zip Lock Bags",
-          "Sanitizing Toilet Spray",
-          "Soap and Handwash (pocket sized)",
-          "Tooth Paste and Tooth Brush",
+          "Zip-lock bags",
+          "Biodegradable soap",
+          "Handwash (pocket-sized)",
+          "Toothpaste and toothbrush",
+          "Personal medications",
         ],
       },
     ],
 
     callToAction: {
-      heading: "Pay Online To Book Your Trek Now",
+      heading: "Book Your Kyarkoti Harsil Trek Adventure",
       buttonText: "Book Now",
       bookingUrl: "https://thesearchingsouls.com/trek/book/kyarkoti-harsil",
     },
@@ -273,7 +295,7 @@ export const trekData = {
           "https://www.thesearchingsouls.com/wp-content/uploads/2020/03/BL-T-1.jpg",
         title: "Bhrigu Lake Trek",
         description:
-          "Bhrigu Lake is a high altitude trek in the himalayas of Kullu district of Himanchal Pradesh.",
+          "High altitude alpine lake trek near Manali with panoramic views",
         link: "https://www.thesearchingsouls.com/bhrigu-lake-trek/",
       },
       {
@@ -281,7 +303,7 @@ export const trekData = {
           "https://www.thesearchingsouls.com/wp-content/uploads/2021/06/HP-Thmb.jpg",
         title: "Hampta Pass Trek",
         description:
-          "A pass in the Himalayas of Himachal Pradesh connecting Kullu and Spiti valley",
+          "Alpine pass trek connecting Kullu and Spiti valleys with stunning scenery",
         link: "https://www.thesearchingsouls.com/hampta-pass-trek/",
       },
       {
@@ -289,7 +311,7 @@ export const trekData = {
           "https://www.thesearchingsouls.com/wp-content/uploads/2022/04/Thumbnail.jpg",
         title: "Kashmir Great Lakes Trek",
         description:
-          "One of the most beautiful treks in the country with stunning alpine lakes",
+          "Multi-day alpine lakes trek with pristine mountain scenery",
         link: "https://www.thesearchingsouls.com/kashmir-great-lakes-trek",
       },
       {
@@ -297,7 +319,7 @@ export const trekData = {
           "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/Tarsar-Marsar-1.jpg",
         title: "Tarsar Marsar Trek",
         description:
-          "Alpine lake trek located in Tral valley of Pulwama district in Jammu and Kashmir",
+          "Scenic alpine lake trek in Kashmir with beautiful meadows",
         link: "https://www.thesearchingsouls.com/tarsar-marsar-lake-trek/",
       },
     ],
@@ -310,7 +332,7 @@ export const trekData = {
     hero: {
       image: "/aa.webp",
       title: "Gulabi Kantha Trek",
-      subtitle: "4N 5D — Pink Mountain Paradise",
+      subtitle: "3N 4D — Pink Mountain Paradise",
       buttonText: "Book Now",
     },
 
@@ -329,11 +351,11 @@ export const trekData = {
       trekName: "Gulabi Kantha Trek",
       price: "₹8,000",
       features: [
-        "Dehradun to Dehradun all inclusive",
-        "Book Now at Just ₹3500",
+        "Dehradun to Dehradun all inclusive package",
+        "Book Now at Just ₹3,500",
         "Perfect for beginners and families",
         "Highest Rated Trekking Company in India",
-        "First Company to Introduce Jumbo Bag (Includes all Trekking Gear)",
+        "First Company to Introduce Jumbo Bag",
         "Certified by IMF, ATAOI, Startup India, Uttarakhand Tourism",
         "Expert local guides with extensive knowledge",
       ],
@@ -348,52 +370,52 @@ export const trekData = {
           title: "Difficulty Level",
           description: "Easy to Moderate",
         },
-        { icon: "altitude", title: "Altitude", description: "11,500 Ft." },
+        { icon: "altitude", title: "Max Altitude", description: "3,500 m (11,500 ft)" },
         {
           icon: "season",
           title: "Best Season",
-          description: "April - June, Sept - Nov",
+          description: "April - June, September - November",
         },
       ],
       pricing: {
         amount: "₹8,000",
-        duration: "4N 5D",
+        duration: "3N 4D",
         phone: "+918979920602",
         bookingUrl: "https://thesearchingsouls.com/trek/book/gulabi-kantha",
       },
       addOns: [
-        "Transportation available at ₹ 2500/person from Dehradun to Dehradun",
-        "Back Pack offloading ₹ 3500/person",
+        "Transportation: ₹2,500/person from Dehradun to Dehradun",
+        "Backpack offloading: ₹3,500/person",
       ],
     },
 
     gearAndInclusions: {
       rentalUrl: "https://www.thesearchingsouls.com/rentalproduct/",
       inclusions: [
-        "Dehradun to Dehradun Trek",
-        "Meals - (Veg Only- Breakfast, Lunch, Evening Snacks and Dinner)",
-        "Accommodation in camps on Triple/Quad Sharing Basis",
-        "Experienced Trek Leader, Professional Guides",
+        "Dehradun to Dehradun trek package",
+        "All Meals - Vegetarian (Breakfast, Lunch, Dinner, Evening Snacks)",
+        "Accommodation in camps on sharing basis",
+        "Experienced Trek Leader and professional guides",
         "Forest permits and entry fees",
-        "Medical Amenities – First Aid Kits, Oxymeters, oxygen cylinders",
-        "Sanitised and Hygienic Camp sites",
+        "Medical Amenities - First Aid Kits, Oxymeters, Oxygen cylinders",
+        "Sanitised and hygienic campsites",
       ],
       exclusions: [
-        "Anything not mentioned in inclusion list",
+        "Items not mentioned in inclusions",
         "5% GST",
         "Personal expenses",
-        "Any kind of insurance",
-        "Unscheduled stay due to weather conditions",
-        "Porter/mule charges",
-        "Cost of Evacuation in case of emergency",
+        "Any kind of personal insurance",
+        "Delays due to weather conditions",
+        "Porter/mule charges for personal bags",
+        "Cost of emergency evacuation",
       ],
     },
 
     transportation: {
       items: [
-        "No of Persons (5-7): Tata Sumo/Mahindra Bolero",
-        "No of Persons (8-13): Tempo Traveler",
-        "Vehicles are Non AC for group departures",
+        "5-7 persons: Tata Sumo/Mahindra Bolero",
+        "8-13 persons: Tempo Traveler",
+        "Non-AC vehicles for group departures",
       ],
       reviewImages: [
         "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/aBT1.jpg",
@@ -407,60 +429,61 @@ export const trekData = {
 
     itinerary: {
       overview:
-        "Gulabi Kantha Trek is a beautiful 3N 4D trek in Uttarakhand. Known for its pink rhododendron blooms and stunning meadows, this trek offers spectacular views of major Himalayan peaks.",
+        "Gulabi Kantha Trek is a beautiful 3N 4D trek in Uttarakhand. Known for its pink rhododendron blooms during spring and stunning meadows, this trek offers spectacular views of major Himalayan peaks including Swargarohini.",
       specialFeatures: [
         "Spectacular rhododendron forest trail during spring season",
         "360-degree views of major Himalayan peaks including Swargarohini",
         "Beautiful alpine meadows and pristine campsites",
-        "Perfect beginner trek with moderate difficulty",
+        "Perfect beginner-friendly trek with moderate difficulty",
         "Close to Dehradun - easily accessible",
       ],
       days: [
         {
           day: "Day 1: Dehradun to Raithal to Gui",
-          details: "Drive: 180 km | Trek: 3 km | Altitude: 8,500 ft",
+          details: "Drive: 180 km | Trek: 3 km | Altitude: 2,600 m (8,500 ft)",
           content: [
             "Early morning departure from Dehradun",
-            "Drive to Raithal village through scenic mountain roads",
-            "Begin trek to Gui campsite",
+            "Scenic drive through mountain roads to Raithal village",
+            "Brief trek from Raithal to Gui campsite",
             "Gentle ascent through oak and rhododendron forests",
             "Overnight camping at Gui",
           ],
         },
         {
           day: "Day 2: Gui to Gulabi Kantha",
-          details: "Trek: 6 km | Duration: 5-6 hours | Altitude: 11,500 ft",
+          details: "Trek: 6 km | Duration: 5-6 hours | Altitude: 3,500 m (11,500 ft)",
           content: [
-            "Trek through beautiful meadows",
+            "Trek through beautiful meadows after breakfast",
             "Gradual ascent with stunning mountain views",
             "Reach Gulabi Kantha summit",
-            "360-degree panoramic views of Himalayas",
+            "Enjoy 360-degree panoramic views of Himalayas",
             "Overnight camping near the summit",
           ],
         },
         {
           day: "Day 3: Gulabi Kantha to Gui",
-          details: "Trek: 6 km | Duration: 4-5 hours | Altitude: 8,500 ft",
+          details: "Trek: 6 km | Duration: 4-5 hours | Altitude: 2,600 m (8,500 ft)",
           content: [
-            "Enjoy sunrise views from Gulabi Kantha",
+            "Enjoy sunrise and morning views from Gulabi Kantha",
             "Descend back to Gui campsite",
-            "Packed lunch during trek",
+            "Packed lunch during descent",
             "Evening bonfire and cultural activities",
-            "Overnight at Gui",
+            "Overnight at Gui campsite",
           ],
         },
         {
-          day: "Day 4: Gui to Raithal, Drive to Dehradun",
+          day: "Day 4: Gui to Raithal and Dehradun",
           details: "Trek: 3 km | Drive: 180 km",
           content: [
-            "Descend to Raithal village",
+            "Descend to Raithal village after breakfast",
             "Drive back to Dehradun",
-            "Expected arrival by evening",
-            "Trek ends",
+            "Lunch on the way",
+            "Expected arrival in Dehradun by evening",
+            "Trek concludes",
           ],
         },
       ],
-      note: "Best time to visit is during April-May for rhododendron blooms or September-November for clear mountain views.",
+      note: "Best time to visit is April-May for rhododendron blooms or September-November for clear mountain views and pleasant weather.",
     },
 
     safetyVideos: [
@@ -485,14 +508,14 @@ export const trekData = {
       {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2021/10/Jumbo-Bag.jpg",
-        title: "First Jumbo Bag",
-        description: "Innovative all-in-one trekking gear solution",
+        title: "Jumbo Bag Innovation",
+        description: "First company to introduce all-in-one trekking gear solution",
       },
       {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2021/10/Easy-rescheduling.jpg",
         title: "Easy Rescheduling",
-        description: "Flexible booking and rescheduling options",
+        description: "Flexible booking and hassle-free rescheduling options",
       },
     ],
 
@@ -500,36 +523,37 @@ export const trekData = {
       {
         category: "Basic Trek Essentials",
         items: [
-          "Rucksack (50-60 ltr with rain cover)",
-          "Trekking Shoes with good grip",
-          "Trekking Poles (recommended)",
+          "Rucksack (50-60 liters with rain cover)",
+          "Trekking shoes with good grip and ankle support",
+          "Trekking poles (recommended)",
           "Headlamp with extra batteries",
           "Water bottle (2 liters capacity)",
           "Day pack (20-30 liters)",
         ],
       },
       {
-        category: "Clothes",
+        category: "Clothing",
         items: [
-          "2-3 Quick dry T-shirts",
+          "Quick-dry T-shirts (3-4)",
+          "Full sleeve shirts (2)",
           "Thermal inner wear (top and bottom)",
           "Fleece jacket",
           "Down/Padded jacket",
-          "Trek pants (2 nos)",
+          "Trekking pants (2 pairs)",
           "Warm socks (3-4 pairs)",
           "Sun cap and woollen cap",
-          "Gloves (both woollen and waterproof)",
+          "Gloves (woollen and waterproof)",
         ],
       },
       {
-        category: "Personal Items",
+        category: "Personal Care",
         items: [
           "Sunglasses (UV protected)",
           "Sunscreen lotion (SPF 40+)",
           "Moisturizer and lip balm",
           "Personal medicines",
-          "Toiletries (biodegradable)",
-          "Quick dry towel",
+          "Biodegradable toiletries",
+          "Quick-dry towel",
           "Tissue papers and wet wipes",
         ],
       },
@@ -614,8 +638,8 @@ export const trekData = {
       trekName: "Dayara Bugyal Trek",
       price: "₹7,500",
       features: [
-        "Dehradun to Dehradun all inclusive",
-        "Book Now at Just ₹5000",
+        "Dehradun to Dehradun all inclusive package",
+        "Book Now at Just ₹5,000",
         "India's most beautiful high altitude meadow",
         "Highest Rated Trekking Company in India",
         "First Company to Introduce Jumbo Bag",
@@ -629,11 +653,11 @@ export const trekData = {
         { icon: "calendar", title: "Trek Duration", description: "4N 5D" },
         { icon: "distance", title: "Trek Distance", description: "32 Km" },
         { icon: "difficulty", title: "Difficulty Level", description: "Easy" },
-        { icon: "altitude", title: "Altitude", description: "12,000 Ft." },
+        { icon: "altitude", title: "Max Altitude", description: "3,650 m (12,000 ft)" },
         {
           icon: "season",
           title: "Best Season",
-          description: "May - June, Sept - Nov",
+          description: "May - June, September - November",
         },
       ],
       pricing: {
@@ -643,24 +667,24 @@ export const trekData = {
         bookingUrl: "https://thesearchingsouls.com/trek/book/dayara-bugyal",
       },
       addOns: [
-        "Transportation available at ₹ 3000/person from Dehradun to Dehradun",
-        "Back Pack offloading ₹ 3000/person",
+        "Transportation: ₹3,000/person from Dehradun to Dehradun",
+        "Backpack offloading: ₹3,000/person",
       ],
     },
 
     gearAndInclusions: {
       rentalUrl: "https://www.thesearchingsouls.com/rentalproduct/",
       inclusions: [
-        "Dehradun to Dehradun Trek",
-        "All Meals - Breakfast, Lunch, Dinner, Evening Snacks",
+        "Dehradun to Dehradun trek package",
+        "All Meals - Vegetarian (Breakfast, Lunch, Dinner, Evening Snacks)",
         "Accommodation in tents/homestays on sharing basis",
         "Experienced Trek Leader and support staff",
-        "All necessary permits",
+        "All necessary permits and entry fees",
         "Medical kit, Oxymeters, Oxygen cylinders",
-        "Sanitised camping equipment",
+        "Sanitised camping equipment and campsites",
       ],
       exclusions: [
-        "Anything not mentioned in inclusions",
+        "Items not mentioned in inclusions",
         "5% GST",
         "Personal expenses",
         "Insurance of any kind",
@@ -672,8 +696,8 @@ export const trekData = {
 
     transportation: {
       items: [
-        "No of Persons (5-7): Tata Sumo/Bolero",
-        "No of Persons (8-13): Tempo Traveler",
+        "5-7 persons: Tata Sumo/Mahindra Bolero",
+        "8-13 persons: Tempo Traveler",
         "Non-AC vehicles for group departures",
       ],
       reviewImages: [
@@ -699,45 +723,46 @@ export const trekData = {
       days: [
         {
           day: "Day 1: Dehradun to Barsu Village",
-          details: "Drive: 180 km | Duration: 7-8 hours | Altitude: 8,400 ft",
+          details: "Drive: 180 km | Duration: 7-8 hours | Altitude: 2,560 m (8,400 ft)",
           content: [
             "Early morning departure from Dehradun",
             "Scenic drive through Uttarkashi",
             "Reach Barsu village by evening",
-            "Acclimatization and briefing",
+            "Acclimatization and briefing session",
             "Overnight stay in homestay",
           ],
         },
         {
           day: "Day 2: Barsu to Barnala Tal",
-          details: "Trek: 5 km | Duration: 4-5 hours | Altitude: 10,000 ft",
+          details: "Trek: 5 km | Duration: 4-5 hours | Altitude: 3,050 m (10,000 ft)",
           content: [
             "Trek begins through dense oak and rhododendron forest",
             "Gradual ascent with beautiful forest trail",
-            "Reach Barnala Tal - a small lake",
+            "Reach Barnala Tal - a small alpine lake",
+            "Packed lunch during the trek",
             "Set up camps near the lake",
-            "Overnight camping",
+            "Overnight camping at Barnala Tal",
           ],
         },
         {
           day: "Day 3: Barnala Tal to Dayara Bugyal",
-          details: "Trek: 4 km | Duration: 3-4 hours | Altitude: 12,000 ft",
+          details: "Trek: 4 km | Duration: 3-4 hours | Altitude: 3,650 m (12,000 ft)",
           content: [
-            "Trek to the magnificent Dayara meadows",
+            "Trek to the magnificent Dayara meadows after breakfast",
             "Witness vast rolling grasslands",
-            "360-degree mountain views",
-            "Explore the meadows",
+            "360-degree mountain views from the meadow",
+            "Explore the scenic meadows and take photographs",
             "Overnight camping at Dayara Bugyal",
           ],
         },
         {
           day: "Day 4: Dayara Bugyal to Barsu",
-          details: "Trek: 9 km | Duration: 6-7 hours | Altitude: 8,400 ft",
+          details: "Trek: 9 km | Duration: 6-7 hours | Altitude: 2,560 m (8,400 ft)",
           content: [
-            "Enjoy sunrise over the Himalayas",
-            "Descend back to Barsu village",
+            "Enjoy sunrise over the Himalayas from Dayara",
+            "Descend back through forest trails",
             "Stop at Barnala Tal for lunch",
-            "Reach Barsu by evening",
+            "Reach Barsu village by evening",
             "Overnight at homestay",
           ],
         },
@@ -746,13 +771,14 @@ export const trekData = {
           details: "Drive: 180 km | Duration: 7-8 hours",
           content: [
             "Drive back to Dehradun after breakfast",
+            "Scenic drive back through mountain roads",
             "Lunch on the way",
             "Reach Dehradun by evening",
-            "Trek ends",
+            "Trek concludes",
           ],
         },
       ],
-      note: "This trek is perfect year-round. Visit in spring for blooming meadows or winter for snow-covered landscapes.",
+      note: "This trek is perfect year-round. Visit in spring (May-June) for blooming meadows or fall (September-November) for clear mountain views.",
     },
 
     safetyVideos: [
@@ -777,14 +803,14 @@ export const trekData = {
       {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2021/10/Jumbo-Bag.jpg",
-        title: "First Jumbo Bag",
-        description: "Innovative all-in-one trekking gear solution",
+        title: "Jumbo Bag Innovation",
+        description: "First company to introduce all-in-one trekking gear solution",
       },
       {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2021/10/Easy-rescheduling.jpg",
         title: "Easy Rescheduling",
-        description: "Flexible booking and rescheduling options",
+        description: "Flexible booking and hassle-free rescheduling options",
       },
     ],
 
@@ -792,12 +818,12 @@ export const trekData = {
       {
         category: "Basic Trek Essentials",
         items: [
-          "Rucksack (50-60 ltr)",
+          "Rucksack (50-60 liters with rain cover)",
           "Trekking shoes with good ankle support",
-          "Trekking poles",
-          "Headlamp with batteries",
-          "Water bottles (2 liters)",
-          "Small backpack for day use",
+          "Trekking poles (recommended)",
+          "Headlamp with extra batteries",
+          "Water bottles (2 liters capacity)",
+          "Small backpack for day use (20-30 liters)",
         ],
       },
       {
@@ -806,19 +832,20 @@ export const trekData = {
           "Quick-dry T-shirts (3-4)",
           "Full sleeve shirts (2)",
           "Trekking pants (2)",
-          "Thermal wear (top & bottom)",
+          "Thermal wear (top and bottom)",
           "Fleece or woollen sweater",
           "Padded jacket",
           "Rain jacket/poncho",
           "Woollen socks (4 pairs)",
+          "Cotton socks (1 pair)",
           "Sun cap and woollen cap",
-          "Gloves",
+          "Gloves (woollen and waterproof)",
         ],
       },
       {
         category: "Personal Care",
         items: [
-          "Sunscreen (SPF 40+)",
+          "Sunscreen lotion (SPF 40+)",
           "Sunglasses (UV protected)",
           "Moisturizer and lip balm",
           "Toilet paper and wet wipes",
@@ -834,7 +861,7 @@ export const trekData = {
           "Personal medical kit",
           "Energy bars and dry fruits",
           "Camera with extra batteries",
-          "Plastic bags for waste",
+          "Plastic bags for waste management",
           "Book or cards for leisure",
         ],
       },
@@ -851,307 +878,37 @@ export const trekData = {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2021/08/kedarkantha.jpg",
         title: "Kedarkantha Trek",
-        description: "Popular winter summit trek with stunning snow landscapes",
+        description:
+          "Popular winter summit trek with stunning snow-covered landscapes",
         link: "https://www.thesearchingsouls.com/kedarkantha-trek/",
       },
       {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2022/05/har-ki-dun.jpg",
         title: "Har Ki Dun Trek",
-        description: "Valley trek with ancient villages and hanging glaciers",
+        description:
+          "Valley trek with ancient villages and hanging glaciers",
         link: "https://www.thesearchingsouls.com/har-ki-dun-trek/",
       },
       {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2020/03/BL-T-1.jpg",
         title: "Bhrigu Lake Trek",
-        description: "High altitude alpine lake trek near Manali",
+        description:
+          "High altitude alpine lake trek near Manali with panoramic views",
         link: "https://www.thesearchingsouls.com/bhrigu-lake-trek/",
       },
       {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2022/07/chopta-chandrashila.jpg",
         title: "Chopta Chandrashila Trek",
-        description: "Mini Switzerland of India with panoramic summit views",
+        description:
+          "Mini Switzerland of India with panoramic summit views",
         link: "https://www.thesearchingsouls.com/chopta-chandrashila-trek/",
       },
     ],
   },
 
-  // ==========================================
-  // 4. BHRIGU LAKE TREK
-  // ==========================================
-  "bhrigu-lake-trek": {
-    hero: {
-      image: "/ll.png",
-      title: "Bhrigu Lake Trek",
-      subtitle: "3N 4D — Sacred Alpine Lake Adventure",
-      buttonText: "Book Now",
-    },
-
-    navigationButtons: [
-      { id: "1", href: "#trekdetail", text: "Trek Summary" },
-      { id: "2", href: "#greview", text: "Google Reviews" },
-      { id: "3", href: "#trekitinerary", text: "Trek Itinerary" },
-      { id: "4", href: "#trekessentials", text: "Trek Essentials" },
-      { id: "5", href: "#faqs", text: "Trek FAQs" },
-      { id: "6", href: "#reachbase", text: "How to reach Base?" },
-      { id: "7", href: "#why", text: "Why TSS" },
-      { id: "8", href: "#safety", text: "Safety with TSS" },
-    ],
-
-    enquiry: {
-      trekName: "Bhrigu Lake Trek",
-      price: "₹4,999",
-      features: [
-        "Manali to Manali all inclusive",
-        "Book Now at Just ₹4500",
-        "Sacred high altitude alpine lake",
-        "Highest Rated Trekking Company in India",
-        "First Company to Introduce Jumbo Bag",
-        "Certified guides with local expertise",
-        "Perfect weekend trek from Manali",
-      ],
-    },
-
-    trekDetails: {
-      details: [
-        { icon: "calendar", title: "Trek Duration", description: "3N 4D" },
-        { icon: "distance", title: "Trek Distance", description: "22 Km" },
-        {
-          icon: "difficulty",
-          title: "Difficulty Level",
-          description: "Easy to Moderate",
-        },
-        { icon: "altitude", title: "Altitude", description: "14,100 Ft." },
-        { icon: "season", title: "Best Season", description: "May - October" },
-      ],
-      pricing: {
-        amount: "₹4,999",
-        duration: "3N 4D",
-        phone: "+918979920602",
-        bookingUrl: "https://thesearchingsouls.com/trek/book/bhrigu-lake-trek",
-      },
-      addOns: [
-        "Transportation available at ₹ 2500/person from Delhi to Manali and back",
-        "Back Pack offloading ₹ 3500/person",
-      ],
-    },
-
-    gearAndInclusions: {
-      rentalUrl: "https://www.thesearchingsouls.com/rentalproduct/",
-      inclusions: [
-        "Manali to Manali Trek",
-        "All Meals (Breakfast, Lunch, Dinner, Evening Snacks)",
-        "Accommodation in camps on Triple/Quad sharing",
-        "Experienced Trek Leader and guides",
-        "Forest permits and entry fees",
-        "Medical kit, Oxymeters, Oxygen cylinders",
-        "High quality camping equipment",
-      ],
-      exclusions: [
-        "Items not mentioned in inclusions",
-        "5% GST",
-        "Personal expenses and tips",
-        "Any kind of insurance",
-        "Costs due to natural calamities",
-        "Porter charges for personal luggage",
-        "Emergency evacuation costs",
-      ],
-    },
-
-    transportation: {
-      items: [
-        "No of Persons (5-7): Tata Sumo/Bolero",
-        "No of Persons (8-13): Tempo Traveler",
-        "Private taxis also available on request",
-      ],
-      reviewImages: [
-        "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/aBT1.jpg",
-        "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/aDB2.jpg",
-        "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/aHP1.jpg",
-        "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/aKGL-1.jpg",
-        "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/aKK-New-2.jpg",
-        "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/aSP1.jpg",
-      ],
-    },
-
-    itinerary: {
-      overview:
-        "Bhrigu Lake Trek is a stunning high-altitude trek near Manali. Named after Sage Bhrigu, this sacred alpine lake sits at 14,100 ft and offers breathtaking 360-degree views of the Pir Panjal and Dhauladhar ranges. Perfect for beginners looking for a challenging yet achievable trek.",
-      specialFeatures: [
-        "Sacred alpine lake named after Sage Bhrigu from Mahabharata",
-        "360-degree panoramic views of Pir Panjal and Dhauladhar ranges",
-        "View of Hanuman Tibba, Seven Sisters, and Deo Tibba peaks",
-        "Accessible high-altitude trek perfect for beginners",
-        "Beautiful meadows and ridge walk experience",
-      ],
-      days: [
-        {
-          day: "Day 1: Manali to Gulaba to Rola Kholi",
-          details:
-            "Drive: 22 km | Trek: 5 km | Duration: 4-5 hours | Altitude: 10,500 ft",
-          content: [
-            "Drive from Manali to Gulaba (1 hour)",
-            "Begin trek through beautiful meadows",
-            "Gradual ascent with stunning valley views",
-            "Reach Rola Kholi campsite",
-            "Overnight camping at Rola Kholi",
-          ],
-        },
-        {
-          day: "Day 2: Rola Kholi to Bhrigu Lake and back",
-          details: "Trek: 6 km | Duration: 6-7 hours | Altitude: 14,100 ft",
-          content: [
-            "Early morning start (around 5 AM)",
-            "Trek to Bhrigu Lake via ridge",
-            "Reach the sacred alpine lake",
-            "360-degree mountain views",
-            "Descend back to Rola Kholi",
-            "Overnight camping at Rola Kholi",
-          ],
-        },
-        {
-          day: "Day 3: Rola Kholi to Gulaba, Drive to Manali",
-          details: "Trek: 5 km | Duration: 3-4 hours | Drive: 22 km",
-          content: [
-            "Descend to Gulaba after breakfast",
-            "Easy downhill trek through meadows",
-            "Drive back to Manali",
-            "Reach Manali by afternoon",
-            "Trek ends",
-          ],
-        },
-      ],
-      note: "Weather conditions at high altitude can change rapidly. Carry proper warm clothing even in summer months.",
-    },
-
-    safetyVideos: [
-      {
-        title: "Safety with TSS",
-        videoUrl: "https://www.youtube.com/embed/eUUtMhlHYAE",
-      },
-      {
-        title: "TSS Jumbo Bag",
-        videoUrl: "https://www.youtube.com/embed/0uZkt8wGP1g",
-      },
-    ],
-
-    whyTSS: [
-      {
-        image:
-          "https://www.thesearchingsouls.com/wp-content/uploads/2021/10/Higesht-Rated.jpg",
-        title: "Highest Rated",
-        description:
-          "Top-rated trekking company with excellent customer reviews",
-      },
-      {
-        image:
-          "https://www.thesearchingsouls.com/wp-content/uploads/2021/10/Jumbo-Bag.jpg",
-        title: "First Jumbo Bag",
-        description: "Innovative all-in-one trekking gear solution",
-      },
-      {
-        image:
-          "https://www.thesearchingsouls.com/wp-content/uploads/2021/10/Easy-rescheduling.jpg",
-        title: "Easy Rescheduling",
-        description: "Flexible booking and rescheduling options",
-      },
-    ],
-
-    packingEssentials: [
-      {
-        category: "Basic Trek Essentials",
-        items: [
-          "Trekking backpack (50-60 ltr with rain cover)",
-          "Good quality trekking shoes",
-          "Trekking poles (highly recommended)",
-          "Headlamp with spare batteries",
-          "Water bottles (2 liters minimum)",
-          "Day pack (20-30 liters)",
-        ],
-      },
-      {
-        category: "Clothing Layers",
-        items: [
-          "Moisture-wicking T-shirts (3)",
-          "Full-sleeve quick-dry shirts (2)",
-          "Trekking pants (2)",
-          "Thermal innerwear (top & bottom)",
-          "Fleece jacket or pullover",
-          "Padded/Down jacket (very important)",
-          "Waterproof jacket with hood",
-          "Trekking socks (4-5 pairs)",
-          "Sun hat and warm beanie",
-          "Gloves (both light and warm)",
-        ],
-      },
-      {
-        category: "Personal Items",
-        items: [
-          "Sunglasses with UV protection",
-          "Sunscreen lotion (SPF 50+)",
-          "Moisturizer and lip balm (SPF)",
-          "Personal toiletries",
-          "Toilet paper and wet wipes",
-          "Hand sanitizer",
-          "Small towel (quick-dry)",
-        ],
-      },
-      {
-        category: "Important Others",
-        items: [
-          "Valid photo ID proof (mandatory)",
-          "Personal first aid kit",
-          "Prescribed personal medicines",
-          "Energy bars, nuts, dry fruits",
-          "Camera with extra batteries/power bank",
-          "Reusable plastic bags",
-          "Lightweight insulated water bottle",
-        ],
-      },
-    ],
-
-    callToAction: {
-      heading: "Book Your Bhrigu Lake Adventure Now",
-      buttonText: "Book Now",
-      bookingUrl: "https://thesearchingsouls.com/trek/book/bhrigu-lake-trek",
-    },
-
-    relatedTreks: [
-      {
-        image:
-          "https://www.thesearchingsouls.com/wp-content/uploads/2021/06/HP-Thmb.jpg",
-        title: "Hampta Pass Trek",
-        description:
-          "Cross from Kullu to Lahaul valley with stunning landscape changes",
-        link: "https://www.thesearchingsouls.com/hampta-pass-trek/",
-      },
-      {
-        image:
-          "https://www.thesearchingsouls.com/wp-content/uploads/2022/04/Thumbnail.jpg",
-        title: "Kashmir Great Lakes Trek",
-        description:
-          "One of India's most beautiful treks with pristine alpine lakes",
-        link: "https://www.thesearchingsouls.com/kashmir-great-lakes-trek",
-      },
-      {
-        image:
-          "https://www.thesearchingsouls.com/wp-content/uploads/2022/06/beas-kund.jpg",
-        title: "Beas Kund Trek",
-        description:
-          "Easy trek to the origin of Beas river with magnificent views",
-        link: "https://www.thesearchingsouls.com/beas-kund-trek/",
-      },
-      {
-        image:
-          "https://www.thesearchingsouls.com/wp-content/uploads/2022/08/chandratal.jpg",
-        title: "Chandratal Lake Trek",
-        description: "Moon Lake in Spiti - a photographer's paradise",
-        link: "https://www.thesearchingsouls.com/chandratal-lake-trek/",
-      },
-    ],
-  },
 };
 
 export const getTrekData = (slug: string) => {

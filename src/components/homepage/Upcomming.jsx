@@ -294,9 +294,9 @@ const Upcoming = () => {
           <div>
             <SliderComponent sliderId="slider3" data={trekData.slider3} />
           </div>
-          <div>
+          {/* <div>
             <SliderComponent sliderId="slider4" data={trekData.slider4} />
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
