@@ -19,41 +19,49 @@ const Footer = () => {
               </p>
             </div>
 
-            {/* CONTACT US Column */}
-            <div className="text-center md:text-left">
-              <h2 className="text-xl md:text-2xl font-bold mb-4 uppercase tracking-wider">
-                Contact Us
-              </h2>
-              <div className="text-gray-200 text-sm md:text-base">
-                <p className="font-semibold">Address</p>
-                <p className="mb-3">
-                  Lane No 3, Friends Enclave, Near Siddhartha Law College, IT
-                  Park, Sahastradhara Rd, Dehradun, Uttarakhand 248013
-                </p>
-                <p className="mb-3">
-                  Daily Business Hours:{" "}
-                  <span className="text-[#e1ed00] font-semibold">
-                    9 AM to 9 PM
-                  </span>
-                </p>
-                <p>
-                  Call:{" "}
-                  <a
-                    href="tel:+919634923602"
-                    className="text-[#e1ed00] hover:underline"
-                  >
-                    +91-9634923602
-                  </a>
-                  ,{" "}
-                  <a
-                    href="tel:+917895770439"
-                    className="text-[#e1ed00] hover:underline"
-                  >
-                    +91-7895770439
-                  </a>
-                </p>
-              </div>
-            </div>
+           {/* CONTACT US Column */}
+<div className="text-center md:text-left">
+  <h2 className="text-xl md:text-2xl font-bold mb-4 uppercase tracking-wider">
+    Contact Us
+  </h2>
+  <div className="text-gray-200 text-sm md:text-base">
+    <p className="font-semibold">Address</p>
+    <p className="mb-3">
+      Lane No 3, Friends Enclave, Near Siddhartha Law College, IT Park, Sahastradhara Rd, Dehradun, Uttarakhand 248013
+    </p>
+    <p className="mb-3">
+      Daily Business Hours:{" "}
+      <span className="text-[#e1ed00] font-semibold">9 AM to 9 PM</span>
+    </p>
+    <p className="mb-2">
+      Call / WhatsApp:{" "}
+      <a
+        href="tel:+916396476118"
+        className="text-[#e1ed00] hover:underline"
+      >
+        +91-6396476118
+      </a>{" "}
+      (<a
+        href="https://wa.me/916396476118"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-[#e1ed00] hover:underline"
+      >
+        WhatsApp
+      </a>)
+    </p>
+    <p>
+      Email:{" "}
+      <a
+        href="mailto:aashishnegi979@gmail.com"
+        className="text-[#e1ed00] hover:underline"
+      >
+        aashishnegi979@gmail.com
+      </a>
+    </p>
+  </div>
+</div>
+
 
             {/* IN A NUTSHELL Column */}
             <div className="text-center md:text-left">

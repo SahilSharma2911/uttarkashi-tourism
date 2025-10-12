@@ -1,14 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import {
-  Phone,
-  Mail,
-  Check,
-  ChevronDown,
-  ChevronRight,
-  Menu,
-  X,
-} from "lucide-react";
+import { Phone, Mail, Check, ChevronDown, Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const updates = [
@@ -33,26 +25,9 @@ const Navbar = () => {
       href: "#",
       hasDropdown: true,
       subItems: [
-        {
-          name: "Kyarkoti Harsil Trek",
-          href: "/kyarkoti-harsil-trek",
-          hasSubDropdown: false,
-        },
-        {
-          name: "Gulabi Kantha",
-          href: "/gulabi-kantha",
-          hasSubDropdown: false,
-        },
-        {
-          name: "Dayara Bugyal",
-          href: "/dayara-bugyal",
-          hasSubDropdown: false,
-        },
-        // {
-        //   name: "Bhrigu Lake Trek",
-        //   href: "/bhrigu-lake-trek",
-        //   hasSubDropdown: false,
-        // },
+        { name: "Kyarkoti Harsil Trek", href: "/kyarkoti-harsil-trek" },
+        { name: "Gulabi Kantha", href: "/gulabi-kantha" },
+        { name: "Dayara Bugyal", href: "/dayara-bugyal" },
       ],
     },
     { name: "Tours", href: "#" },
@@ -60,31 +35,19 @@ const Navbar = () => {
     { name: "Our World", href: "#" },
   ];
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  const toggleMobileDropdown = (index) => {
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  // <- removed TypeScript annotation here
+  const toggleMobileDropdown = (index) =>
     setActiveMobileDropdown(activeMobileDropdown === index ? null : index);
-    setActiveMobileSubDropdown(null);
-  };
-
-  const toggleMobileSubDropdown = (index) => {
-    setActiveMobileSubDropdown(
-      activeMobileSubDropdown === index ? null : index
-    );
-  };
 
   return (
     <div className="font-sans">
-      {/* Trek Updates Section (Top) */}
+      {/* Trek Updates Section */}
       <section className="bg-[#153022] text-white py-2">
         <div className="w-full max-w-[1440px] mx-auto px-4 relative overflow-hidden">
           <motion.div
             className="flex gap-6 whitespace-nowrap text-sm font-medium"
-            animate={{
-              x: [0, -100 * updates.length],
-            }}
+            animate={{ x: [0, -100 * updates.length] }}
             transition={{
               duration: updates.length * 5,
               repeat: Infinity,
@@ -103,31 +66,25 @@ const Navbar = () => {
         </div>
       </section>
 
-      {/* Sticky Main Navigation Section */}
+      {/* Sticky Navbar */}
       <section className="sticky top-0 bg-[#1D3827]/90 backdrop-blur-md text-white shadow-md z-50">
         <div className="w-full max-w-[1440px] mx-auto px-4 py-3">
           <div className="flex items-center justify-between">
-            {/* Logo and Company Name */}
+            {/* Logo */}
             <div className="flex items-center gap-4">
-              <img
-                src="/logo.jpeg"
-                alt="The Searching Souls Logo"
-                className="h-12 w-auto"
-              />
+              <img src="/logo.jpeg" alt="The Searching Souls Logo" className="h-12 w-auto" />
               <h1 className="text-xl font-bold tracking-tight hidden md:block">
                 Beyond Trails, Into the Wild.
               </h1>
             </div>
 
-            {/* Desktop Navigation Menu */}
+            {/* Desktop Menu */}
             <nav className="hidden lg:flex items-center gap-8">
               {navItems.map((item, index) => (
                 <div
                   key={index}
                   className="relative group"
-                  onMouseEnter={() =>
-                    setActiveDropdown(item.hasDropdown ? index : null)
-                  }
+                  onMouseEnter={() => setActiveDropdown(item.hasDropdown ? index : null)}
                   onMouseLeave={() => {
                     setActiveDropdown(null);
                     setActiveSubDropdown(null);
@@ -141,7 +98,7 @@ const Navbar = () => {
                     {item.hasDropdown && <ChevronDown className="w-5 h-5" />}
                   </a>
 
-                  {/* Desktop Dropdown */}
+                  {/* Dropdown */}
                   {item.hasDropdown && activeDropdown === index && (
                     <motion.div
                       className="absolute top-full left-0 bg-white/95 backdrop-blur-md text-gray-900 rounded-xl shadow-2xl p-4 min-w-60 z-50 border border-gray-200/50"
@@ -153,7 +110,7 @@ const Navbar = () => {
                         <a
                           key={subIndex}
                           href={subItem.href}
-                          className="flex items-center justify-between px-4 py-2.5 text-sm font-medium hover:bg-[#2a4b38] hover:text-white rounded-lg transition-colors duration-200 block"
+                          className="block px-4 py-2.5 text-sm font-medium hover:bg-[#2a4b38] hover:text-white rounded-lg transition-colors duration-200"
                         >
                           {subItem.name}
                         </a>
@@ -164,16 +121,12 @@ const Navbar = () => {
               ))}
             </nav>
 
-            {/* Mobile Hamburger Menu Button */}
+            {/* Mobile Menu Toggle */}
             <button
               className="lg:hidden p-2 text-white hover:text-[#e1ed00] transition-colors duration-300"
               onClick={toggleMobileMenu}
             >
-              {isMobileMenuOpen ? (
-                <X className="w-7 h-7" />
-              ) : (
-                <Menu className="w-7 h-7" />
-              )}
+              {isMobileMenuOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
             </button>
           </div>
         </div>
@@ -182,20 +135,12 @@ const Navbar = () => {
         <motion.div
           className="lg:hidden bg-[#1D3827]/90 backdrop-blur-md border-t border-[#2a4b38] overflow-hidden"
           initial={{ height: 0 }}
-          animate={{
-            height: isMobileMenuOpen ? "auto" : 0,
-          }}
-          transition={{
-            duration: 0.3,
-            ease: "easeInOut",
-          }}
+          animate={{ height: isMobileMenuOpen ? "auto" : 0 }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
         >
           <div className="w-full max-w-[1440px] mx-auto px-4 py-4">
             {navItems.map((item, index) => (
-              <div
-                key={index}
-                className="border-b border-[#2a4b38] last:border-b-0"
-              >
+              <div key={index} className="border-b border-[#2a4b38] last:border-b-0">
                 <div className="flex items-center justify-between py-3">
                   <a
                     href={item.href}
@@ -204,10 +149,7 @@ const Navbar = () => {
                     {item.name}
                   </a>
                   {item.hasDropdown && (
-                    <button
-                      onClick={() => toggleMobileDropdown(index)}
-                      className="p-2 text-white hover:text-[#e1ed00]"
-                    >
+                    <button onClick={() => toggleMobileDropdown(index)} className="p-2 text-white hover:text-[#e1ed00]">
                       <ChevronDown
                         className={`w-5 h-5 transition-transform duration-200 ${
                           activeMobileDropdown === index ? "rotate-180" : ""
@@ -217,7 +159,7 @@ const Navbar = () => {
                   )}
                 </div>
 
-                {/* Mobile First Level Dropdown */}
+                {/* Mobile Dropdown */}
                 {item.hasDropdown && activeMobileDropdown === index && (
                   <div className="pl-6 pb-3">
                     {item.subItems.map((subItem, subIndex) => (
@@ -242,42 +184,38 @@ const Navbar = () => {
         <div className="w-full max-w-[1440px] mx-auto px-4 py-4 flex flex-wrap items-center justify-center gap-6">
           <div className="flex items-center gap-3">
             <Phone className="w-5 h-5" />
-            <a
-              href="tel:+919634923602"
-              className="text-[#e1ed00] text-base font-medium hover:underline"
-            >
-              +91 9634923602
+            <a href="tel:+916396476118" className="text-[#e1ed00] text-base font-medium hover:underline">
+              +91 6396476118
             </a>
           </div>
+
           <div className="flex items-center gap-3">
             <Phone className="w-5 h-5" />
             <a
-              href="tel:+917895770439"
+              href="https://wa.me/916396476118"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-[#e1ed00] text-base font-medium hover:underline"
             >
-              +91 7895770439
+              WhatsApp Us
             </a>
           </div>
+
           <div className="flex items-center gap-3">
             <Mail className="w-5 h-5" />
-            <a
-              href="mailto:info@thesearchingsouls.com"
-              className="text-[#e1ed00] text-base font-medium hover:underline"
-            >
-              info@thesearchingsouls.com
+            <a href="mailto:aashishnegi979@gmail.com" className="text-[#e1ed00] text-base font-medium hover:underline">
+              aashishnegi979@gmail.com
             </a>
           </div>
+
           <div className="flex items-center gap-3">
             <Check className="w-5 h-5" />
-            <span className="text-[#e1ed00] text-base font-medium">
-              Contact us
-            </span>
+            <span className="text-[#e1ed00] text-base font-medium">Contact us</span>
           </div>
+
           <div className="flex items-center gap-3">
             <Check className="w-5 h-5" />
-            <span className="text-[#e1ed00] text-base font-medium">
-              About us
-            </span>
+            <span className="text-[#e1ed00] text-base font-medium">About us</span>
           </div>
         </div>
       </section>

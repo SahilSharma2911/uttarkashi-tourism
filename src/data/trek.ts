@@ -8,7 +8,7 @@ export const trekData = {
     hero: {
       image: "/qq.webp",
       title: "Kyarkoti Harsil Trek",
-      subtitle: "5N 6D — Alpine Adventure in Himachal Pradesh",
+      subtitle: "6N 7D — Alpine Adventure in Uttarakhand",
       buttonText: "Book Now",
     },
 
@@ -27,11 +27,10 @@ export const trekData = {
       trekName: "Kyarkoti Harsil Trek",
       price: "₹6,500",
       features: [
-        "Kafnu to Kaza all inclusive package",
-        "Book Now at Just ₹4,000",
-        "No outsourcing - largest service provider in Uttarakhand",
-        "Highest Rated Trekking Company in India",
-        "First Company to Introduce Jumbo Bag",
+        "All-inclusive Harsil base to Kyarkoti trek package",
+        "No outsourcing — largest service provider in Uttarakhand",
+        "Highest rated trekking company in India",
+        "First to introduce Jumbo Bag",
         "Certified by IMF, ATAOI, Startup India, Uttarakhand Tourism",
         "Top 10 Most Promising Adventure Travel Company",
       ],
@@ -39,28 +38,32 @@ export const trekData = {
 
     trekDetails: {
       details: [
-        { icon: "calendar", title: "Trek Duration", description: "5N 6D" },
-        { icon: "distance", title: "Trek Distance", description: "41 Km" },
+        { icon: "calendar", title: "Trek Duration", description: "6N 7D" },
+        {
+          icon: "distance",
+          title: "Trek Distance",
+          description: "≈ 34 km (on foot)",
+        },
         {
           icon: "difficulty",
           title: "Difficulty Level",
-          description: "Moderate to Difficult",
+          description: "Moderate",
         },
-        { icon: "altitude", title: "Max Altitude", description: "4,200 m (13,780 ft)" },
+        { icon: "altitude", title: "Max Altitude", description: "3,800 m" },
         {
           icon: "season",
           title: "Best Season",
-          description: "July - Early September",
+          description: "June – September",
         },
       ],
       pricing: {
         amount: "₹6,500",
-        duration: "5N 6D",
+        duration: "6N 7D",
         phone: "+918979920602",
         bookingUrl: "https://thesearchingsouls.com/trek/book/kyarkoti-harsil",
       },
       addOns: [
-        "Transportation: ₹3,500/person from Shimla to Kafnu and Kaza to Manali",
+        "Transportation: ₹3,500/person (Shimla / Dehradun to Harsil and return)",
         "Backpack offloading: ₹4,000/person",
       ],
     },
@@ -68,31 +71,28 @@ export const trekData = {
     gearAndInclusions: {
       rentalUrl: "https://www.thesearchingsouls.com/rentalproduct/",
       inclusions: [
-        "Kafnu to Kaza Trek package",
-        "All Meals - Vegetarian (Breakfast, Lunch, Dinner, Evening Snacks)",
-        "Accommodation in homestay/guest house on sharing basis",
-        "Expert Trek Leader and professional guides",
-        "Forest permits and entry fees",
-        "Medical Amenities - First Aid Kits, Oxymeters, Oxygen cylinders",
-        "Sanitised and hygienic campsites",
+        "All meals (veg) during trek and stay",
+        "Trek to Kyarkoti Lake route",
+        "Accommodation in tents and guest houses",
+        "Experienced trek leader and support staff",
+        "Permits, forest & entry fees",
+        "First aid kit, basic medical facilities",
+        "Sanitized campsites & proper hygiene",
       ],
       exclusions: [
-        "Items not mentioned in inclusions",
-        "5% GST",
-        "Meals during transportation",
-        "Personal expenses",
-        "Delays due to weather or road blocks",
-        "Backpack offloading charges (separate add-on)",
-        "Cost of emergency evacuation",
+        "Transport to/from trek start unless opted",
+        "GST (5%)",
+        "Personal expenses, snacks, drinks",
+        "Emergency evacuation cost",
+        "Backpack offloading (separate charge)",
       ],
     },
 
     transportation: {
       items: [
-        "5-7 persons: Tata Sumo/Mahindra Bolero or equivalent",
-        "8-13 persons: Tempo Traveler",
-        "Vehicle selection based on availability",
-        "Non-AC vehicles for group departures",
+        "Vehicles for pick-up from Dehradun / drop location",
+        "Sumo / Bolero for small groups, Tempo Traveler for larger groups",
+        "Non-AC or AC depending on group size and availability",
       ],
       reviewImages: [
         "https://www.thesearchingsouls.com/wp-content/uploads/2023/03/aBT1.jpg",
@@ -106,90 +106,84 @@ export const trekData = {
 
     itinerary: {
       overview:
-        "The Kyarkoti Harsil Trek is a scenic 5N 6D alpine adventure in Himachal Pradesh. This trek takes you through pristine valleys, alpine meadows, snow-covered peaks, and offers spectacular Himalayan views with minimal crowds.",
+        "The Kyarkoti Harsil Trek is a 7-day alpine journey through Uttarakhand’s pristine landscapes. Begin with a drive from Dehradun to Harsil, then trek through meadows, camps, and reach the Kyarkoti Lake before returning via scenic descent.",
       specialFeatures: [
-        "Reaches maximum altitude of 4,200m (13,780 ft)",
-        "Stunning alpine meadows and serene riverbanks",
-        "Explores apple-laden Kafnu village and arid Mudh village",
-        "Diverse ecosystems: forests, meadows, snow, wildflowers, rivers",
-        "Off-beat trek with fewer trekkers - less crowded trails",
+        "Summit point around 3,800 m",
+        "Green meadows, alpine vistas, stone trails",
+        "Lesser-known, offbeat route with fewer trekkers",
+        "Mix of campsite, forests, ridgelines",
       ],
       days: [
         {
-          day: "Day 1: Shimla to Kafnu",
+          day: "Day 1: Dehradun → Uttarkashi → Harsil",
           details:
-            "Drive Distance: 200 km | Duration: 7-8 hours | Altitude: 2,450 m",
+            "Drive ~168 km (6–8 hrs) via Mussoorie → Uttarkashi → Harsil (2,450 m)",
           content: [
-            "Pick up from Shimla bus stand at 6:30 AM",
-            "Breakfast and lunch en route",
-            "Arrive at Kafnu village by evening",
-            "Overnight stay in guest house",
-            "Evening orientation and acclimatization",
+            "Pick up participants from Dehradun early morning",
+            "Drive through scenic route via Uttarkashi",
+            "Reach Harsil by evening, check-in and dinner",
+            "Evening orientation, rest and acclimatize",
           ],
         },
         {
-          day: "Day 2: Kafnu to Mulling",
+          day: "Day 2: Harsil → Lower Kyarkoti Camp",
+          details: "Trek ~8 km, 5–6 hrs, to Lower Kyarkoti (~3,000 m)",
+          content: [
+            "After breakfast, start trek from Harsil",
+            "Walk through alpine meadows and gentle slopes",
+            "Set up camp in Lower Kyarkoti, acclimatize",
+            "Enjoy scenic views of the valley",
+          ],
+        },
+        {
+          day: "Day 3: Lower Kyarkoti → Upper Kyarkoti Camp",
+          details: "Trek ~6 km, 4–5 hrs, reaching ~3,300–3,400 m",
+          content: [
+            "Continue ascending through trails and ridges",
+            "Cross small streams and meadows",
+            "Set camp at Upper Kyarkoti",
+            "Afternoon acclimatization walk nearby",
+          ],
+        },
+        {
+          day: "Day 4: Exploration / Day Treks from Upper Kyarkoti",
+          details: "Day trek around, no major camp movement",
+          content: [
+            "Short hike to nearby ridgelines or viewpoints",
+            "Explore surrounding terrain, glacier edges",
+            "Return to Upper camp for overnight stay",
+          ],
+        },
+        {
+          day: "Day 5: Upper Kyarkoti → Laldevta Camp",
+          details: "Trek ~12 km, 5–6 hrs, descend to Laldevta (~3,100 m)",
+          content: [
+            "Begin descent towards Laldevta",
+            "Walk downhill through meadows and rough paths",
+            "Set up camp at Laldevta",
+          ],
+        },
+        {
+          day: "Day 6: Laldevta → Harshil / Uttarkashi",
           details:
-            "Trek Distance: 11 km | Duration: 7-8 hours | Altitude: 2,450 m to 3,200 m",
+            "Trek ~5 km, then drive back ~230 km (6 hrs) to Harsil / Uttarkashi",
           content: [
-            "Trek begins after breakfast",
-            "First half involves gradual ascent through forest",
-            "Second half becomes slightly more challenging",
-            "Trail mostly forest-covered with oak trees",
-            "Packed lunch during the trek",
-            "Overnight camping at Mulling",
+            "Trek the last few km to connect to motor route",
+            "Drive back via scenic route to Harsil or Uttarkashi",
+            "Overnight stay in Harsil or Uttarkashi depending on schedule",
           ],
         },
         {
-          day: "Day 3: Mulling to Karah",
-          details:
-            "Trek Distance: 6 km | Duration: 5 hours | Altitude: 3,200 m to 3,550 m",
+          day: "Day 7: Return / Departure",
+          details: "After breakfast, depart for Dehradun or onward destination",
           content: [
-            "Trek to Karah campsite after breakfast",
-            "Easy trek with only the last 1 km being steep",
-            "Traverse through alpine meadows",
-            "Hot lunch served at campsite",
-            "Afternoon acclimatization activities",
-            "Overnight camping at Karah",
-          ],
-        },
-        {
-          day: "Day 4: Rest and Acclimatization at Karah",
-          details: "Altitude: 3,550 m",
-          content: [
-            "Full day for rest and acclimatization",
-            "Team games and acclimatization activities",
-            "Explore nearby areas and take photographs",
-            "Briefing for upcoming summit push",
-            "Overnight at Karah campsite",
-          ],
-        },
-        {
-          day: "Day 5: Karah to Phutsirang",
-          details:
-            "Trek Distance: 5 km | Duration: 5-6 hours | Altitude: 3,550 m to 4,200 m",
-          content: [
-            "Trek to Phutsirang campsite after breakfast",
-            "Continuous ascent throughout the day",
-            "Witness alpine ridges and panoramic Himalayan views",
-            "Spectacular views of snow-capped peaks",
-            "Hot lunch at the campsite",
-            "Overnight camping at Phutsirang (highest point)",
-          ],
-        },
-        {
-          day: "Day 6: Phutsirang to Kaza and Return",
-          details: "Trek Distance: 12 km | Descent and drive back",
-          content: [
-            "Sunrise at Phutsirang with stunning views",
-            "Descend to Kaza village",
-            "Lunch at Kaza",
-            "Drive to Manali or Rampur (transportation as per add-on)",
-            "Trek concludes",
+            "Drive from Harsil to Dehradun (~230 km)",
+            "Reach by evening, drop participants",
+            "Trek ends",
           ],
         },
       ],
-      note: "It is strongly advised to keep a buffer day for this trek in case of bad weather or unforeseen situations. Altitude acclimatization is important.",
+      note: "Altitude acclimatization is built in. It is recommended to keep buffer day for bad weather or delays.",
     },
 
     safetyVideos: [
@@ -209,19 +203,19 @@ export const trekData = {
           "https://www.thesearchingsouls.com/wp-content/uploads/2021/10/Higesht-Rated.jpg",
         title: "Highest Rated",
         description:
-          "Top-rated trekking company with excellent customer reviews and ratings",
+          "Top-rated trekking company with exceptional reviews and ratings",
       },
       {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2021/10/Jumbo-Bag.jpg",
         title: "Jumbo Bag Innovation",
-        description: "First to introduce all-in-one trekking gear solution",
+        description: "All-in-one trekking gear solution provided by TSS",
       },
       {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2021/10/Easy-rescheduling.jpg",
         title: "Easy Rescheduling",
-        description: "Flexible booking and hassle-free rescheduling options",
+        description: "Flexible booking, easy reschedule options",
       },
     ],
 
@@ -229,56 +223,50 @@ export const trekData = {
       {
         category: "Basic Trek Essentials",
         items: [
-          "Rucksack (60-70 liters with rain cover)",
-          "Down jacket (essential at high altitude)",
-          "Fleece or wool sweater",
-          "Gloves (woollen and waterproof)",
-          "Rain jacket or poncho",
+          "Rucksack (60-70 L) with rain cover",
+          "Down jacket",
+          "Fleece / wool sweater",
+          "Gloves (wool + waterproof)",
+          "Rain jacket / poncho",
           "Trekking poles",
-          "Headlamp with extra batteries",
+          "Headlamp + extra batteries",
           "Trekking shoes (broken-in)",
           "Trekking pants (2 pairs)",
-          "Day pack (20-30 liters)",
+          "Daypack (20-30 L)",
         ],
       },
       {
         category: "Clothing",
         items: [
-          "Thermal inner wear (top and bottom)",
-          "Warm socks (4-5 pairs)",
+          "Thermal inner wear",
+          "Warm socks (4–5 pairs)",
           "Cotton socks (2 pairs)",
           "Woollen cap",
           "Sun cap",
-          "Extra warm layers",
-          "Spare lower wear for nights",
-          "Balaclava or neck gaiter",
+          "Extra layers for cold nights",
+          "Balaclava / neck gaiter",
         ],
       },
       {
         category: "Personal Utilities",
         items: [
-          "Sunglasses (UV protected)",
+          "Sunglasses (UV)",
           "Sunscreen lotion (SPF 40+)",
-          "Moisturizer and lip balm",
+          "Lip balm, moisturizer",
           "Hand towel",
-          "Lunch box and utensils",
-          "Water bottle (2-3 liters capacity)",
-          "Sandals for camp",
-          "Personal first aid kit",
-          "Energy bars and dry fruits",
+          "Water bottle (2–3 L)",
+          "Snacks / energy bars",
+          "First aid kit, personal meds",
         ],
       },
       {
         category: "Toiletries",
         items: [
-          "Toilet paper rolls",
-          "Towel (quick-dry)",
-          "Wet wipes (unscented)",
-          "Zip-lock bags",
+          "Quick-dry towel",
+          "Wet wipes",
           "Biodegradable soap",
-          "Handwash (pocket-sized)",
-          "Toothpaste and toothbrush",
-          "Personal medications",
+          "Toothbrush & toothpaste",
+          "Toilet paper",
         ],
       },
     ],
@@ -303,7 +291,7 @@ export const trekData = {
           "https://www.thesearchingsouls.com/wp-content/uploads/2021/06/HP-Thmb.jpg",
         title: "Hampta Pass Trek",
         description:
-          "Alpine pass trek connecting Kullu and Spiti valleys with stunning scenery",
+          "Alpine pass trek connecting Kullu and Spiti valleys with scenic trails",
         link: "https://www.thesearchingsouls.com/hampta-pass-trek/",
       },
       {
@@ -311,7 +299,7 @@ export const trekData = {
           "https://www.thesearchingsouls.com/wp-content/uploads/2022/04/Thumbnail.jpg",
         title: "Kashmir Great Lakes Trek",
         description:
-          "Multi-day alpine lakes trek with pristine mountain scenery",
+          "Multi-day alpine lakes trek in Kashmir with pristine scenery",
         link: "https://www.thesearchingsouls.com/kashmir-great-lakes-trek",
       },
       {
@@ -370,7 +358,11 @@ export const trekData = {
           title: "Difficulty Level",
           description: "Easy to Moderate",
         },
-        { icon: "altitude", title: "Max Altitude", description: "3,500 m (11,500 ft)" },
+        {
+          icon: "altitude",
+          title: "Max Altitude",
+          description: "3,500 m (11,500 ft)",
+        },
         {
           icon: "season",
           title: "Best Season",
@@ -451,7 +443,8 @@ export const trekData = {
         },
         {
           day: "Day 2: Gui to Gulabi Kantha",
-          details: "Trek: 6 km | Duration: 5-6 hours | Altitude: 3,500 m (11,500 ft)",
+          details:
+            "Trek: 6 km | Duration: 5-6 hours | Altitude: 3,500 m (11,500 ft)",
           content: [
             "Trek through beautiful meadows after breakfast",
             "Gradual ascent with stunning mountain views",
@@ -462,7 +455,8 @@ export const trekData = {
         },
         {
           day: "Day 3: Gulabi Kantha to Gui",
-          details: "Trek: 6 km | Duration: 4-5 hours | Altitude: 2,600 m (8,500 ft)",
+          details:
+            "Trek: 6 km | Duration: 4-5 hours | Altitude: 2,600 m (8,500 ft)",
           content: [
             "Enjoy sunrise and morning views from Gulabi Kantha",
             "Descend back to Gui campsite",
@@ -509,7 +503,8 @@ export const trekData = {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2021/10/Jumbo-Bag.jpg",
         title: "Jumbo Bag Innovation",
-        description: "First company to introduce all-in-one trekking gear solution",
+        description:
+          "First company to introduce all-in-one trekking gear solution",
       },
       {
         image:
@@ -653,7 +648,11 @@ export const trekData = {
         { icon: "calendar", title: "Trek Duration", description: "4N 5D" },
         { icon: "distance", title: "Trek Distance", description: "32 Km" },
         { icon: "difficulty", title: "Difficulty Level", description: "Easy" },
-        { icon: "altitude", title: "Max Altitude", description: "3,650 m (12,000 ft)" },
+        {
+          icon: "altitude",
+          title: "Max Altitude",
+          description: "3,650 m (12,000 ft)",
+        },
         {
           icon: "season",
           title: "Best Season",
@@ -723,7 +722,8 @@ export const trekData = {
       days: [
         {
           day: "Day 1: Dehradun to Barsu Village",
-          details: "Drive: 180 km | Duration: 7-8 hours | Altitude: 2,560 m (8,400 ft)",
+          details:
+            "Drive: 180 km | Duration: 7-8 hours | Altitude: 2,560 m (8,400 ft)",
           content: [
             "Early morning departure from Dehradun",
             "Scenic drive through Uttarkashi",
@@ -734,7 +734,8 @@ export const trekData = {
         },
         {
           day: "Day 2: Barsu to Barnala Tal",
-          details: "Trek: 5 km | Duration: 4-5 hours | Altitude: 3,050 m (10,000 ft)",
+          details:
+            "Trek: 5 km | Duration: 4-5 hours | Altitude: 3,050 m (10,000 ft)",
           content: [
             "Trek begins through dense oak and rhododendron forest",
             "Gradual ascent with beautiful forest trail",
@@ -746,7 +747,8 @@ export const trekData = {
         },
         {
           day: "Day 3: Barnala Tal to Dayara Bugyal",
-          details: "Trek: 4 km | Duration: 3-4 hours | Altitude: 3,650 m (12,000 ft)",
+          details:
+            "Trek: 4 km | Duration: 3-4 hours | Altitude: 3,650 m (12,000 ft)",
           content: [
             "Trek to the magnificent Dayara meadows after breakfast",
             "Witness vast rolling grasslands",
@@ -757,7 +759,8 @@ export const trekData = {
         },
         {
           day: "Day 4: Dayara Bugyal to Barsu",
-          details: "Trek: 9 km | Duration: 6-7 hours | Altitude: 2,560 m (8,400 ft)",
+          details:
+            "Trek: 9 km | Duration: 6-7 hours | Altitude: 2,560 m (8,400 ft)",
           content: [
             "Enjoy sunrise over the Himalayas from Dayara",
             "Descend back through forest trails",
@@ -804,7 +807,8 @@ export const trekData = {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2021/10/Jumbo-Bag.jpg",
         title: "Jumbo Bag Innovation",
-        description: "First company to introduce all-in-one trekking gear solution",
+        description:
+          "First company to introduce all-in-one trekking gear solution",
       },
       {
         image:
@@ -886,8 +890,7 @@ export const trekData = {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2022/05/har-ki-dun.jpg",
         title: "Har Ki Dun Trek",
-        description:
-          "Valley trek with ancient villages and hanging glaciers",
+        description: "Valley trek with ancient villages and hanging glaciers",
         link: "https://www.thesearchingsouls.com/har-ki-dun-trek/",
       },
       {
@@ -902,13 +905,11 @@ export const trekData = {
         image:
           "https://www.thesearchingsouls.com/wp-content/uploads/2022/07/chopta-chandrashila.jpg",
         title: "Chopta Chandrashila Trek",
-        description:
-          "Mini Switzerland of India with panoramic summit views",
+        description: "Mini Switzerland of India with panoramic summit views",
         link: "https://www.thesearchingsouls.com/chopta-chandrashila-trek/",
       },
     ],
   },
-
 };
 
 export const getTrekData = (slug: string) => {
