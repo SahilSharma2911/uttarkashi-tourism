@@ -5,6 +5,7 @@ export const trekData = {
   // 1. KYARKOTI HARSIL TREK
   // ==========================================
   "kyarkoti-harsil-trek": {
+    title: "Kyarkoti Harsil Trek",
     hero: {
       image: "/qq.webp",
       title: "Kyarkoti Harsil Trek",
@@ -59,7 +60,7 @@ export const trekData = {
       pricing: {
         amount: "₹6,500",
         duration: "6N 7D",
-        phone: "+918979920602",
+        phone: "+916396476118",
         bookingUrl: "https://thesearchingsouls.com/trek/book/kyarkoti-harsil",
       },
       addOns: [
@@ -317,6 +318,7 @@ export const trekData = {
   // 2. GULABI KANTHA TREK
   // ==========================================
   "gulabi-kantha": {
+    title: "Gulabi Kantha Trek",
     hero: {
       image: "/aa.webp",
       title: "Gulabi Kantha Trek",
@@ -372,7 +374,7 @@ export const trekData = {
       pricing: {
         amount: "₹8,000",
         duration: "3N 4D",
-        phone: "+918979920602",
+        phone: "+916396476118",
         bookingUrl: "https://thesearchingsouls.com/trek/book/gulabi-kantha",
       },
       addOns: [
@@ -611,6 +613,7 @@ export const trekData = {
   // 3. DAYARA BUGYAL TREK
   // ==========================================
   "dayara-bugyal": {
+    title: "Dayara Bugyal Trek",
     hero: {
       image: "/db.avif",
       title: "Dayara Bugyal Trek",
@@ -662,7 +665,7 @@ export const trekData = {
       pricing: {
         amount: "₹7,500",
         duration: "4N 5D",
-        phone: "+918979920602",
+        phone: "+916396476118",
         bookingUrl: "https://thesearchingsouls.com/trek/book/dayara-bugyal",
       },
       addOns: [

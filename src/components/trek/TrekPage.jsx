@@ -15,7 +15,7 @@ import { getTrekData } from "../../data/trek";
 
 const TrekPage = () => {
   const { slug } = useParams();
-  
+
   console.log("Trek slug:", slug);
 
   // Get trek data based on slug
@@ -26,8 +26,12 @@ const TrekPage = () => {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-3xl font-bold text-gray-800 mb-4">Trek Not Found</h1>
-          <p className="text-gray-600">The trek you're looking for doesn't exist.</p>
+          <h1 className="text-3xl font-bold text-gray-800 mb-4">
+            Trek Not Found
+          </h1>
+          <p className="text-gray-600">
+            The trek you're looking for doesn't exist.
+          </p>
         </div>
       </div>
     );
@@ -38,15 +42,15 @@ const TrekPage = () => {
       <Hero data={trekData.hero} />
       <EnquirySection data={trekData.enquiry} />
       <NavigationButtons data={trekData.navigationButtons} />
-      <TrekDetails data={trekData.trekDetails} />
+      <TrekDetails data={trekData.trekDetails} title={trekData.title} />
       <GearAndInclusions data={trekData.gearAndInclusions} />
-      <TransportationAndReviews data={trekData.transportation} />
-      <TrekItinerary data={trekData.itinerary} />
-      <SafetyVideos data={trekData.safetyVideos} />
-      <WhyTSS data={trekData.whyTSS} />
-      <PackingEssentials data={trekData.packingEssentials} />
+      {/* <TransportationAndReviews data={trekData.transportation} /> */}
+      <TrekItinerary data={trekData.itinerary} title={trekData.title}/>
+      {/* <SafetyVideos data={trekData.safetyVideos} /> */}
+      {/* <WhyTSS data={trekData.whyTSS} /> */}
+      <PackingEssentials data={trekData.packingEssentials} title={trekData.title} />
       <CallToAction data={trekData.callToAction} />
-      <RelatedTreks data={trekData.relatedTreks} />
+      {/* <RelatedTreks data={trekData.relatedTreks} /> */}
     </div>
   );
 };

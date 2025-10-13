@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const TrekItinerary = ({ data }) => {
+const TrekItinerary = ({ data, title }) => {
   const [activeTab, setActiveTab] = useState(null);
 
   const toggleTab = (tabIndex) => {
@@ -13,7 +13,7 @@ const TrekItinerary = ({ data }) => {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            Kyarkoti Harsil Trek Overview & Itinerary
+            {title} Overview & Itinerary
           </h2>
           <p className="text-black max-w-6xl mx-auto text-left text-lg">
             {data.overview}
@@ -23,7 +23,7 @@ const TrekItinerary = ({ data }) => {
         {/* Special Features Section */}
         <div className="mb-12">
           <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-            What is special about Kyarkoti Harsil Trek?
+            What is special about {title}?
           </h3>
           <ul className="space-y-1">
             {data.specialFeatures.map((feature, index) => (
@@ -45,7 +45,7 @@ const TrekItinerary = ({ data }) => {
         <div className="bg-white overflow-hidden">
           <div className="">
             <h3 className="text-2xl font-bold text-gray-800">
-              KYARKOTI HARSIL TREK ITINERARY
+              {title} ITINERARY
             </h3>
           </div>
 

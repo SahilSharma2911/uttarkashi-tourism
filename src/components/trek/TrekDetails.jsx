@@ -1,6 +1,6 @@
 import React from "react";
 
-const TrekDetails = ({ data }) => {
+const TrekDetails = ({ data,title}) => {
   // Icon components mapping
   const iconMap = {
     calendar: (
@@ -94,7 +94,7 @@ const TrekDetails = ({ data }) => {
 
               <div className="bg-[#1D3827]/5 p-4 text-center">
                 <h5 className="font-medium text-gray-800 mb-2">
-                  Call our Kyarkoti Harsil Trek Expert to know more about the trek
+                  Call our {title} Expert to know more about the trek
                 </h5>
                 <a
                   href={`tel:${data.pricing.phone}`}
