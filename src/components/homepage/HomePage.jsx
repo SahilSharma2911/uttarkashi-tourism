@@ -14,7 +14,7 @@ const HomePage = () => {
       {/* <Weakend /> */}
       <Why />
       <Certificate />
-      <Motivation />
+      {/* <Motivation /> */}
     </main>
   );
 };
