@@ -46,7 +46,7 @@ const TrekPage = () => {
       <GearAndInclusions data={trekData.gearAndInclusions} />
       {/* <TransportationAndReviews data={trekData.transportation} /> */}
       <TrekItinerary data={trekData.itinerary} title={trekData.title}/>
-      <SafetyVideos data={trekData.safetyVideos} />
+      {/* <SafetyVideos data={trekData.safetyVideos} /> */}
       {/* <WhyTSS data={trekData.whyTSS} /> */}
       <PackingEssentials data={trekData.packingEssentials} title={trekData.title} />
       <CallToAction data={trekData.callToAction} />
