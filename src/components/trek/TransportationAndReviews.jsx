@@ -43,7 +43,7 @@ const TransportationAndReviews = ({ data }) => {
       </div>
 
       {/* Google Reviews Section */}
-      {/* <div id="greview" className="pb-16 pt-5 px-4 bg-white">
+      <div id="greview" className="pb-16 pt-5 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-800">3700+ 5 Star Google Reviews</h2>
@@ -114,7 +114,7 @@ const TransportationAndReviews = ({ data }) => {
             ))}
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
